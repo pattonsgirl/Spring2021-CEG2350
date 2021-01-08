@@ -16,32 +16,45 @@ for you to use to complete the tasks given.
 
 - 22
 
+## Getting Started:
+
+### Text Editors:
+
+I recommend [Visual Studio Code](https://code.visualstudio.com/) as a cross platform solution (plus dark mode looks cool). You can also use any default text editor on your system (Notepad, Notepad++, or whatever Mac's have).
+
 ### Setup for Windows Users
 
-1. [Download MobaXterm Home Edition: Installer Edition](https://download.mobatek.net/2032020060430358/MobaXterm_Installer_v20.3.zip)
+1. Install WSL 2
+
+- [Follow instructions on the Windows blog](https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps)
+- Common pitfalls:
+  - Windows is not fully up to date.
+  - Did not reboot **before** running the change version command
+- After installing Ubuntu from the Windows store, open Ubuntu once
+  - After the installion message finishes, you should be prompted to create a username and password
+
+2. In later labs, you will need two terminals open. It is absolutely alright to open multiple instances of Ubuntu, but it can be convenient to have a "tab" based setup. I recommend `Windows Terminal` (can be found in the Windows Store) or `MobaXTerm` (installation instructions below)
+
+3. Optional: [Download MobaXterm Home Edition: Installer Edition](https://download.mobatek.net/2062020111930940/MobaXterm_Installer_v20.6.zip)
 
 - Extract the contents to your Desktop.
 - Double-click to run the installer
 - Once installed, run the program one time - this finishes the installation
 - You can now delete the installation files
+- Open Moba. You can now choose to run WSL Ubuntu _or_ Moba bash.
+  - To change terminals, go to Settings -> Configuration. Select the Terminal tab. In the dropdown at the bottom, change from `bash` to `WSL Ubuntu`
 
-2. Moba requires a Linux package. Install using one of the two methods below:
+4. If you **do not have administrative privileges** on the system, you will need to install MobaXTerm (step 3) and install Cygutils (instructions below) in order to perform the labs.
 
-- Easy mode: CygUtils
-  - In Moba, select the Packages icon at the top.
-  - Wait for the package menu to appear.
-  - In the search bar, type "cygutils". Select the package from the result listings
-  - Select Install / Update.
-  - Restart Moba. Start Local Terminal should work
-- Hard mode: WSL 2
-  - [Follow instructions on the Windows blog](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
-  - Common pitfalls:
-    - Windows is not fully up to date.
-    - Did not reboot **before** running the change version command
-  - After installing Ubuntu from the Windows store, open Ubuntu once
-    - After the installion message finishes, you should be prompted to create a username and password
-  - Open Moba. You can now choose to run WSL Ubuntu _or_ Moba bash.
-    - To change terminals, go to Settings -> Configuration. Select the Terminal tab. In the dropdown at the bottom, change from `bash` to `WSL Ubuntu`
+- In Moba, select the Packages icon at the top.
+- Wait for the package menu to appear.
+- In the search bar, type "cygutils". Select the package from the result listings
+- Select Install / Update.
+- Restart Moba. Start Local Terminal should work
+- In the toolbar for Moba, go to Settings -> Configuration
+- In the General tab, check the following two fields are populated with the following values:
+  - Persistent home directory: `_MyDocuments_\MobaXterm\home`
+  - Persistent root directory: `_MyDocuments_\MobaXterm\slash`
 
 ### Mac & Linux Users
 
@@ -49,10 +62,7 @@ for you to use to complete the tasks given.
 
 ## Lab Procedure
 
-Perform the following tasks. Document your answers in a plain text file named `Lab01-LastName.txt`  
-where LastName is your last name
-
-At the top of the file please enter your personal details as follows:
+Perform the following tasks. Document your answers in a plain text file named `Lab01-LastName.txt`where LastName is your last name. At the top of the file please enter your personal details as follows:
 
 ```
 Name: Your name
@@ -126,7 +136,7 @@ Create your AWS environment
   virtual environment.
 
 **WARNING**
-While exploring and discovery is an important part of this course, any additional resources you create in AWS have an associated charge. If resources besides those strictly asked for by this course stay running, you risk running out of funds for this course. While fixable, this will hinder your ability to complete labs on time.
+While exploring and discovery is an important part of this course, any additional resources you create in AWS have an associated charge. If resources besides those strictly asked for by this course stay running, you risk running out of funds for this course. While fixable, this will hinder your ability to complete labs on time. Please let the TA's know if you need assistance cleaning up you environments.
 
 ### Part 1 Lab Report Questions:
 
