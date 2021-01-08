@@ -96,8 +96,7 @@ Assuming you have registered for AWS Educate and have access to this class, perf
   - Click the blue `AWS Console` button
 
   This will launch the AWS console  
-  Note: If you were already logged in with your personal account, click the log out prompt and  
-  log back in with your university account
+  Note: If you were already logged in with your personal account, click the log out prompt and log back in with your university account
 
   Your username in the top right should look something like this  
   `vocstartsoft/user236529=lastname.number@wright.edu`.
@@ -146,7 +145,7 @@ While exploring and discovery is an important part of this course, any additiona
 
 **You are now ready to make an SSH connection to your AWS server.**
 
-- Open MobaXTerm or another terminal.
+- Open Ubuntu or another terminal.
 - Copy of the AWS SSH key that was downloaded to your home directory
   - Helpful commands: `cp, ls, man`
   - The manual method: Create a file with a useful name (or the same name as the downloaded file) `ceg2350-aws-vm.pem`
