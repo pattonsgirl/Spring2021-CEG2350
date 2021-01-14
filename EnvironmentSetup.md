@@ -4,11 +4,13 @@ This guide is for new users who need to set up their environment.
 
 - Windows Users
   - [WSL2](#Install-WSL2)
+    - [WSL2 Troubleshooting](#WSL-2-Install-Errors)
   - [Terminal Manager](#Terminal-Manager)
   - [MobaXTerm](#Install-MobaXTerm)
 - Mac & Linux Users
   - Use terminal already installed on your system
   - Let me (the instructor) or your ta's know if this needs updating
+- [Chromebook Users](#Chromebook-Users)
 - [Text Editors](#Text-Editors)
 
 ## Setup for Windows Users
@@ -38,6 +40,8 @@ In later labs, you will need two terminals open. It is absolutely alright to ope
 - You can now delete the installation files
 - Open Moba. You can now choose to run WSL Ubuntu _or_ Moba bash.
   - To change terminals, go to Settings -> Configuration. Select the Terminal tab. In the dropdown at the bottom, change from `bash` to `WSL Ubuntu`
+- Keep your SSH session "alive"
+  - `Settings` -> `Configuration`. In `SSH` tab, checkmark the box corresponding to `SSH keepalive`
 
 If you **do not have administrative privileges** on the system, you will need to install MobaXTerm (step 3) and install Cygutils (instructions below) in order to perform the labs.
 
@@ -58,3 +62,23 @@ I recommend [Visual Studio Code](https://code.visualstudio.com/) as a cross plat
 ## Mac & Linux Users
 
 - You should have a terminal already installed. Hunt it down ;)
+
+## Chromebook Users
+
+This guide here refers to a [Chrome Extension for SSH connections](https://www.lifewire.com/how-to-use-chromebook-ssh-client-4690108)
+
+- To use your AWS Educate Private Key, you'll need to select "Import..." and browse to your  
+  key file - you can then select your key from the dropdown.
+- You may need to make a "failed" connection in order to get the permission to access files  
+  questions to pop up.
+
+## WSL 2 Install Errors
+
+- Error message:
+
+```
+The requested operation could not be completed due to a virtual disk system limitation.
+Virtual hard disk files must be uncompressed and unencrypted and must not be sparse.
+```
+
+- Follow [WSL2 VHD Issue Guide](https://utf9k.net/blog/wsl2-vhd-issue/)
