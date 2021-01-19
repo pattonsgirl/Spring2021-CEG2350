@@ -1,5 +1,7 @@
 # Guide to Lab Access
 
+## Updated 1/18/2020
+
 ## Setup:
 
 - Have a GitHub account

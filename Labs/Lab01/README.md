@@ -1,5 +1,7 @@
 # Lab 1
 
+## Updated 1/18/2020
+
 The purpose of this lab is to familiarize yourself with the lab space we will be using  
 for the remainder of the labs. You should have received an email regarding your AWS  
 Educate account for this class. We will be using AWS to create virtual environments  
@@ -173,21 +175,33 @@ While exploring and discovery is an important part of this course, any additiona
 4. Read `/etc/*-release`. What is the PRETTY_NAME of the Operating System in AWS? (1 pt)
    **Useful Commands: `cat, cd`**
 
-## Part 3 - Git Fidgetting
+## Part 3 - Git Fidgetting: Updated 1/18
 
 1. Create or sign in to your [github](https://github.com/) account.
-2. Create a new Repository with a name of your choice. I recommend `Spring2021-CEG2350`.
-   - Set it to Private (you can change this in the future).
-   - Check the box to Initialize this repository with a README
-   - Click Create Repository
+2. ~~Create a new Repository with a name of your choice. I recommend `Spring2021-CEG2350`.~~
+
+- ~~Set it to Private (you can change this in the future).~~
+- ~~Check the box to Initialize this repository with a README~~
+- ~~Click Create Repository~~
+
+2. In Pilot -> this course -> Content -> Labs, click the `Link to GitHub Classroom Invite`
+
+- Select your wright.edu email address from the list shown.
+- Select `OK` on the popup to confirm you selected the correct email address.
+- Select `Accept this assignment`
+- After a minute, refresh the next page.
+- Click the lower link / link that looks similar to: `https://github.com/WSU-kduncan/spring2021-ceg2350-your_GitHub_username`. The top link sometimes presents an "error" but things are actually fine.
+- It may be convenient to bookmark this link for easy access.
+
 3. In your github repository, select Code (green button). It should say "Clone with HTTPS". Copy the URL to your clipboard.
 4. Go to your AWS Educate environment.
 5. Create a folder called `git` and change into the folder.
 6. Use the `git` command to `clone` your repository.
 
-### Part 3 Lab Report Questions:
+### Part 3 Lab Report Questions: Updated 1/18
 
-1. Write the command you used to clone your repository. (2 pts)
+1. Copy the URL to your GitHub repository (the magic one from GitHub Classrooms).
+2. Write the command you used to clone your repository. (2 pts)
 
 ## Submission
 
