@@ -12,10 +12,15 @@ This lab assumes that you have completed [Lab 01](../Lab01/README.md)
 
 ## Lab Procedure
 
-Document your progress in a plain text file named `Lab02-LastName.txt`  
-where LastName is your last name
+**For each step, include the command you used to perform the direction or answer the question posed.** If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.  
+`ssh` in to your AWS environment. If you've forgotten your key, you'll need to provision a new stack in AWS Educate and create a new key.  
+See [Remaking your AWS Educate environment](../../..) for instructions.
 
-At the top of the file please enter your personal details as follows:
+1. Go to the folder in which you cloned your Git repository for this course.
+2. Create a directory called `Lab02`
+3. In this directory, create a file called `README.md`
+4. This `README.md` file is where you will put your answers to this lab. I recommend creating two connections to your Linux AWS system for ease of use.
+   - At the top of the file please enter your personal details as follows:
 
 ```
 Name: Your name
@@ -23,7 +28,9 @@ Email: Your email
 
 ```
 
-## Git Passwordless
+**Useful commands: `man, mkdir, cd, ls, pwd, vim / nano`**
+
+## Git Passwordless (2 pts)
 
 From here on out, you are going to use SSH authentication to GitHub. This was discussed in lecture on 1/20 and a special session was also posted for changing from HTTPS to SSH if you already cloned your repo.
 
@@ -35,17 +42,11 @@ From here on out, you are going to use SSH authentication to GitHub. This was di
 
 ## Directories, Files, and Permissions
 
-**For each step, include the command you used to perform the direction or answer the question posed.** If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.  
-`ssh` in to your AWS environment. If you've forgotten your key, you'll need to provision a new stack in AWS Educate and create a new key.  
-See [Remaking your AWS Educate environment](../../..) for instructions.
+### Part 1: Play with directories & naming (3 pts)
 
-### Part 1: Play with directories & naming (5 pts)
-
-1. Go to the folder in which you cloned your Git repository for this course.
-2. Create a directory called `Lab02`
-3. In `Lab02`, create one directory called `DirA` and one directory called `Directory B`
-4. What happens to the path name of `Directory B`? Which of the folders uses a better naming convention?
-5. Rename `Directory B` to `DirB`  
+1. In `Lab02`, create one directory called `DirA` and one directory called `Directory B`
+2. What happens to the path name of `Directory B`? Which of the folders uses a better naming convention?
+3. Rename `Directory B` to `DirB`  
    **Useful commands: `man, mkdir, cd, ls, pwd, mv`**
 
 ### Part 2: Create and edit a file (2 pt)
@@ -87,15 +88,12 @@ See [Remaking your AWS Educate environment](../../..) for instructions.
 11. Create a symbolic link from `hard.txt` in `DirB` to `newsym.txt` in `DirA`  
     **Useful Commands: `ln, test, stat, cp, mv, rm`**
 
-### Part 6: Updating the Git Repo (4 pts)
+### Part 6: Updating the Git Repo (2 pts)
 
 1. Use `git` commands to `add`, `commit` and `push` the `Lab02` folder and files you created into your repository. Write the commands you used and any headaches you ran into along the way.
-2. In the `Lab02` folder, create a file called `README.md`.
-3. Paste your lab notes into the `README.md` file.
-4. Use `git` commands to `add`, `commit` and `push` the `Lab02` `README.md` file. Go to your github repository for this course in your browser, then go to the `Lab02` folder (still in the browser). What do you see?
 
 ## Submission
 
-In your GitHub repository, select the green `Code` button then select `Download ZIP`. Upload this zip file to Pilot.
+In your GitHub repository, select the green `Code` button then select `Download ZIP`. Upload this zip file to the Pilot Dropbox.
 
 In the `Comment` area in the Pilot Dropbox, copy URL / link to the repository corresponding to the project your are submitting.
