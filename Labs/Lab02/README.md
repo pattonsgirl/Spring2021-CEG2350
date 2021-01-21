@@ -1,5 +1,15 @@
 # Lab 2
 
+## Setup
+
+This lab assumes that you have completed [Lab 01](../Lab01/README.md)
+
+- Ubuntu AWS machine exists and you can `ssh` in to the system
+- You have connected to your GitHub repository for this course
+  - If you forgot to bookmark it, the URL is:
+  - `https://github.com/WSU-kduncan/spring2021-ceg2350-YOURGITHUBUSERNAME`
+- You have cloned the repository to you Ubuntu AWS system
+
 ## Lab Procedure
 
 Document your progress in a plain text file named `Lab02-LastName.txt`  
@@ -12,6 +22,16 @@ Name: Your name
 Email: Your email
 
 ```
+
+## Git Passwordless
+
+From here on out, you are going to use SSH authentication to GitHub. This was discussed in lecture on 1/20 and a special session was also posted for changing from HTTPS to SSH if you already cloned your repo.
+
+1. Document the correct `git clone` command OR the steps you took to change your repo from HTTPS to SSH.
+
+- [Create a key pair, upload public key (.\*\.pub) to github](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- [Change your repo to authenticate with SSH (not HTTPS)](https://haydar-ai.medium.com/learning-how-to-git-using-ssh-instead-of-https-91f09cff72de)
+- [If you have errors, poke around here](https://docs.github.com/en/github/authenticating-to-github/error-permission-denied-publickey)
 
 ## Directories, Files, and Permissions
 
@@ -76,4 +96,6 @@ See [Remaking your AWS Educate environment](../../..) for instructions.
 
 ## Submission
 
-Upload your file named Lab02-LastName.txt to the Pilot Dropbox.
+In your GitHub repository, select the green `Code` button then select `Download ZIP`. Upload this zip file to Pilot.
+
+In the `Comment` area in the Pilot Dropbox, copy URL / link to the repository corresponding to the project your are submitting.
