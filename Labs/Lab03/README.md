@@ -1,22 +1,32 @@
 # Lab 03 - NOT FINALIZED
 
+## Setup
+
+This lab assumes that you have completed [Lab 01](../Lab01/README.md)
+
+- Ubuntu AWS machine exists and you can `ssh` in to the system
+- You have connected to your GitHub repository for this course
+  - If you forgot to bookmark it, the URL is:
+  - `https://github.com/WSU-kduncan/spring2021-ceg2350-YOURGITHUBUSERNAME`
+- You have cloned the repository to you Ubuntu AWS system
+
 ## Lab Procedure
 
-Document your progress in a plain text file named `Lab03-LastName.txt`  
-where LastName is your last name
+**For each step, include the command you used to perform the direction or answer the question posed.** If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.  
+`ssh` in to your AWS environment. If you've forgotten your key, you'll need to provision a new stack in AWS Educate and create a new key.  
+See [Remaking your AWS Educate environment](../../..) for instructions.
 
-At the top of the file please enter your personal details as follows:
+1. Go to the folder in which you cloned your Git repository for this course.
+2. Create a directory called `Lab02`
+3. In this directory, create a file called `README.md`
+4. This `README.md` file is where you will put your answers to this lab. I recommend creating two connections to your Linux AWS system for ease of use.
+   - At the top of the file please enter your personal details as follows:
 
 ```
 Name: Your name
 Email: Your email
 
 ```
-
-**Where questions are presented, answer them in your lab notes. For each step, include the command you used to perform the direction or answer the question posed.** If you did something "wrong" make a note of it in your lab. These are learning experiences.
-
-If you've lost or forgotten your key, you'll need to provision a new stack in AWS Educate and create a new key.  
-See [Remaking your AWS Educate environment](../../..) for instructions.
 
 ## Part 1: Aliases (2 pts)
 
