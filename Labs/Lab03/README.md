@@ -34,17 +34,16 @@ Email: Your email
 
 - You can do this in whatever local terminal you have.
 
-2. Make your `alias` permanent for your user by editing the correct file for your terminal. **Write the alias in your lab notes** (1 pt)
+2. Make your `alias` permanent for your user by editing the correct file for your terminal. **Write the alias in your lab write up** (1 pt)
 
-- WSL2 / Linux Users: Edit `.bashrc` in the user's home directory.
-- Mac Users: Edit `.bash_profile` in your user's home directory.
+- WSL2 / Linux Users: Create / edit `.bashrc` in your user's home directory.
+- Mac Users: Create / edit `.bash_profile` in your user's home directory.
 - MobaXTerm + CygUtils Users: Create / edit `.bash_profile` to store your aliases
 
 ## Part 2: IO Redirection (2 pts)
 
 1. Go to your AWS environment.
-2. Go to the folder in which you cloned your Git repository for this course.
-3. Create a folder called `Lab03`
+2. Go to your `Lab 03` folder.
 4. Create a file called `input.txt` with the following contents:
 
 ```
@@ -85,9 +84,7 @@ Email: Your email
 - Takes an argument of a filename. (1 pt)
 - Sorts the contents of the file stored in the argument using the `sort` command.
 - Outputs the sorted data to a file called `sorted.txt` (1 pt)
-- Hint: To run your script you may need / want to play with the file permissions.
-
-2. Copy the contents of your script into your lab notes.  
+- Hint: To run your script you may need / want to play with the file permissions. 
    **Resources:**
 
 - [Command Line Arguments in Shell Script](https://tecadmin.net/tutorial/bash-scripting/bash-command-arguments/)
@@ -97,8 +94,7 @@ Email: Your email
 ## Part 4: Intro to Regular Expressions (2 pts)
 
 1. Add an if statement to your script that checks if the file in the argument ends in `.txt` (2 pts)
-   - If the file does **not** end in `.txt` your script should exit with an error message: `File format not allowed`
-2. Copy the contents of your revised script into your lab notes.  
+   - If the file does **not** end in `.txt` your script should exit with an error message: `File format not allowed`  
    **Resources**
 
 - [How to Use Regex in Bash](https://www.poftut.com/how-to-use-regular-expression-regex-in-bash-linux/)
@@ -109,6 +105,12 @@ Email: Your email
    - It is recommended (not required) to use markdown to make your `README.md` file look organized.
    - [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 2. Use `git` commands to `add`, `commit` and `push` the `Lab03` folder to GitHub. Write the command you used in your lab notes. (1 pts)
+
+## Extra Credit: Colorize Me, Captian (0.5 pt)
+
+Colorize the error condition from your script (`File format not allowed`).  Maybe go for traditional red?  How does purple make you feel?  Rainbow and plaid are also welcome additions.
+
+Make sure you `commit` and `push` your script changes for grading.
 
 ## Submission
 
