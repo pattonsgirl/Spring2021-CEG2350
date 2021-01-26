@@ -17,7 +17,7 @@ This lab assumes that you have completed [Lab 01](../Lab01/README.md)
 See [Remaking your AWS Educate environment](../../..) for instructions.
 
 1. Go to the folder in which you cloned your Git repository for this course.
-2. Create a directory called `Lab02`
+2. Create a directory called `Lab03`
 3. In this directory, create a file called `README.md`
 4. This `README.md` file is where you will put your answers to this lab. I recommend creating two connections to your Linux AWS system for ease of use.
    - At the top of the file please enter your personal details as follows:
@@ -30,8 +30,7 @@ Email: Your email
 
 ## Part 1: Aliases (2 pts)
 
-1. On your **local** machine, create an `alias` called `aws-ssh` that contains the command and parameters you have  
-   been using to log on to your AWS Educate system. Use an _absolute_ path to your key file in your command. Run your new `alias` to test it. **Why use an absolute path instead of a relative path?** (1 pt)
+1. On your **local** machine, create an `alias` called `aws-ssh` that contains the command and parameters you have been using to log on to your AWS Educate system. Use an _absolute_ path to your key file in your command. Run your new `alias` to test it. **Why use an absolute path instead of a relative path?** (1 pt)
 
 - You can do this in whatever local terminal you have.
 
@@ -106,12 +105,13 @@ Email: Your email
 
 ## Part 5: Updating the Git Repo (2 pts)
 
-1. In the `Lab03` folder, create a file called `README.md`.
-2. In `README.md` create a usage guide for your script. Put the contents in your lab notes as well. (1 pts)
+1. In `README.md`, add a usage guide for your script. (1 pts)
    - It is recommended (not required) to use markdown to make your `README.md` file look organized.
    - [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-3. Use `git` commands to `add`, `commit` and `push` the `Lab03` folder to GitHub. Write the command you used in your lab notes. (1 pts)
+2. Use `git` commands to `add`, `commit` and `push` the `Lab03` folder to GitHub. Write the command you used in your lab notes. (1 pts)
 
 ## Submission
 
-Upload your file named `Lab03-LastName.txt` to the Pilot Dropbox.
+In your GitHub repository, select the green `Code` button then select `Download ZIP`. Upload this zip file to the Pilot Dropbox.
+
+In the `Comment` area in the Pilot Dropbox, copy URL / link to the repository corresponding to the project your are submitting.
