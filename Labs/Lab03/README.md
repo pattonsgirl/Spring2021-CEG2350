@@ -71,7 +71,7 @@ Email: Your email
 
 5. Direct the file `input.txt` into the sort command. Write the command you used and the result of sucessfully running the command. (1 pt)
 6. Direct the file `input.txt` into the sort command and direct the output to `output.txt`. Write the command you used and the result of sucessfully running the command. (1 pt)  
-   **Useful commands: `man, vim, sort, <, >, >>`**
+   **Useful commands: `man, vim, sort, <, >, >>`**  
    **Resources:**
 
 - [An Intro to Linux IO Redirection](https://www.digitalocean.com/community/tutorials/an-introduction-to-linux-i-o-redirection)
@@ -84,7 +84,7 @@ Email: Your email
 - Takes an argument of a filename. (1 pt)
 - Sorts the contents of the file stored in the argument using the `sort` command.
 - Outputs the sorted data to a file called `sorted.txt` (1 pt)
-- Hint: To run your script you may need / want to play with the file permissions. 
+- Hint: To run your script you may need / want to play with the file permissions.  
    **Resources:**
 
 - [Command Line Arguments in Shell Script](https://tecadmin.net/tutorial/bash-scripting/bash-command-arguments/)
@@ -94,8 +94,9 @@ Email: Your email
 ## Part 4: Intro to Regular Expressions (2 pts)
 
 1. Add an if statement to your script that checks if the file in the argument ends in `.txt` (2 pts)
-   - If the file does **not** end in `.txt` your script should exit with an error message: `File format not allowed`  
-   **Resources**
+
+- If the file does **not** end in `.txt` your script should exit with an error message: `File format not allowed`  
+**Resources:**
 
 - [How to Use Regex in Bash](https://www.poftut.com/how-to-use-regular-expression-regex-in-bash-linux/)
 
