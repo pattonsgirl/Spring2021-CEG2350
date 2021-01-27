@@ -13,7 +13,3 @@
 Hint: this is the only one Lab 01 required ;)
 
 5. Public keys are used on the server or site you are connecting to, such as GitHub or the Linux machine on AWS.
-
-Given the following permissions associated with a file, what permissions does the user have?
-
--r-xrw---x bob bubbles potato.txt
