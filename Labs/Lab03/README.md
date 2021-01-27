@@ -99,6 +99,7 @@ Email: Your email
 **Resources:**
 
 - [How to Use Regex in Bash](https://www.poftut.com/how-to-use-regular-expression-regex-in-bash-linux/)
+- [Regex 101](https://regex101.com/)
 
 ## Part 5: Updating the Git Repo (2 pts)
 
