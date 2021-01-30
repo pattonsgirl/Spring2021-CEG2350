@@ -17,9 +17,11 @@ This lab assumes that you have completed [Lab 01](../Lab01/README.md)
 See [Remaking your AWS Educate environment](../../..) for instructions.
 
 1. Go to the folder in which you cloned your Git repository for this course.
+   - Path of `/home/ubuntu/spring2021-ceg2350-YOURGITHUBUSERNAME/` OR `/home/ubuntu/git/spring2021-ceg2350-YOURGITHUBUSERNAME/` depending on your setup
 2. Create a directory called `Lab03`
+   - Path of `/home/ubuntu/spring2021-ceg2350-YOURGITHUBUSERNAME/Lab03` OR `/home/ubuntu/git/spring2021-ceg2350-YOURGITHUBUSERNAME/Lab03` depending on your setup
 3. In this directory, create a file called `README.md`
-4. This `README.md` file is where you will put your answers to this lab. I recommend creating two connections to your Linux AWS system for ease of use.
+4. This `README.md` file is where you will put your answers to this lab. I recommend creating two connections to your Linux AWS so you can keep the `README.md` file open while you expirement with the lab.
    - At the top of the file please enter your personal details as follows:
 
 ```
@@ -34,7 +36,7 @@ Email: Your email
 
 - You can do this in whatever local terminal you have.
 
-2. Make your `alias` permanent for your user by editing the correct file for your terminal. **Write the alias in your lab write up** (1 pt)
+2. Make your `alias` permanent for your user by editing the correct file for your terminal. **Write the alias** (1 pt)
 
 - WSL2 / Linux Users: Create / edit `.bashrc` in your user's home directory.
 - Mac Users: Create / edit `.bash_profile` in your user's home directory.
@@ -79,7 +81,7 @@ Email: Your email
 
 ## Part 3: Intro to Scripts (2 pts)
 
-1. Create a bash script called `sorting-party.sh`. The script should have the following features:
+1. Create a bash script called `sorting-party`. The script should have the following features:
 
 - Takes an argument of a filename. (1 pt)
 - Sorts the contents of the file stored in the argument using the `sort` command.
@@ -106,11 +108,11 @@ Email: Your email
 1. In `README.md`, add a usage guide for your script. (1 pts)
    - It is recommended (not required) to use markdown to make your `README.md` file look organized.
    - [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-2. Use `git` commands to `add`, `commit` and `push` the `Lab03` folder to GitHub. Write the command you used in your lab notes. (1 pts)
+2. Use `git` commands to `add`, `commit` and `push` the `Lab03` folder to GitHub. (1 pts)
 
 ## Extra Credit: Colorize Me, Captian (0.5 pt)
 
-Colorize the error condition from your script (`File format not allowed`).  Maybe go for traditional red?  How does purple make you feel?  Rainbow and plaid are also welcome additions.
+Colorize the error condition from your script (`File format not allowed`).  Maybe go for traditional red?  How does purple make you feel?  Rainbow and plaid are also welcome to this party.
 
 Make sure you `commit` and `push` your script changes for grading.
 
