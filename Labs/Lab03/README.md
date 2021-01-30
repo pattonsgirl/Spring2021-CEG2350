@@ -32,7 +32,7 @@ Email: Your email
 
 ## Part 1: Aliases (2 pts)
 
-1. On your **local** machine, create an `alias` called `aws-ssh` that contains the command and parameters you have been using to log on to your AWS Educate system. Use an _absolute_ path to your key file in your command. Run your new `alias` to test it. **Why use an absolute path instead of a relative path?** (1 pt)
+1. On your **local** machine (not on AWS, do not `ssh` in), create an `alias` called `aws-ssh` that contains the command and parameters you have been using to log on to your AWS Educate system. Use an _absolute_ path to your key file in your command. Run your new `alias` to test it. **Why use an absolute path instead of a relative path?** (1 pt)
 
 - You can do this in whatever local terminal you have.
 
