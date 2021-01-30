@@ -41,6 +41,7 @@ Email: Your email
 - WSL2 / Linux Users: Create / edit `.bashrc` in your user's home directory.
 - Mac Users: Create / edit `.bash_profile` in your user's home directory.
 - MobaXTerm + CygUtils Users: Create / edit `.bash_profile` to store your aliases
+- If you really mess up, there is a backup `.bashrc` file [here](.bashrc-backup).  You can copy and paste the contents.
 
 ## Part 2: IO Redirection (2 pts)
 
