@@ -1,4 +1,4 @@
-# Lab 03 - NOT FINALIZED
+# Lab 03
 
 ## Setup
 
