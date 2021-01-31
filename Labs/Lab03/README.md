@@ -109,7 +109,7 @@ Email: Your email
 1. In `README.md`, add a usage guide for your script. (1 pts)
    - It is recommended (not required) to use markdown to make your `README.md` file look organized.
    - [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-2. Use `git` commands to `add`, `commit` and `push` the `Lab03` folder to GitHub. (1 pts)
+2. Use `git` commands to `add`, `commit` and `push` the `Lab03` folder to GitHub.  Note that this does not require text in your write up - your repo itself will serve as documenation. (1 pts)
 
 ## Extra Credit: Colorize Me, Captian (0.5 pt)
 
