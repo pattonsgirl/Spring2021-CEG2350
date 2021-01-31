@@ -50,11 +50,7 @@ Email: Your email
 
 3. Modify `marco` so that when it is run, it should save the current working directory in a file so that `polo` can reference it. (1 pt)
   - Hint: If `marco` can be ran in any directory and `polo` can be run in any directory, should the path to the file be relative or absolute?
-4. Modify `polo` so that when it is run, it should `cd` you back to the directory where you executed `marco`. (1 pt)
-  - Hint: For `polo` to work in your shell, you are going to have to run it differently than `marco`.  The shell you are running in is the parent shell.  When you execute a script, it does its work in a "subshell".  If you run `polo` on its own, it might not create errors, but it also won't change into the directory in your shell, the parent shell - it did the action in the subshell!  To make it do the action in our shell, the parent shell, play with using `source` or `.`  
- 
-  **Resources**
-- [Using Command Output](https://www.cyberciti.biz/faq/unix-linux-bsd-appleosx-bash-assign-variable-command-output/)
+4. Modify `polo` so that when it is run, it echos the command the user needs to go to the directory `marco` was called in.
 
 ## Part 3: The Git Part (1 pt)
 
