@@ -56,6 +56,15 @@ See [Remaking your AWS Educate environment](../../..) for instructions.
 
 - [How to Use Linux Screen Command](https://www.howtogeek.com/662422/how-to-use-linuxs-screen-command/)
 
+## Marco! Polo!
+
+Copy the `marco` and `polo` script from `Lab04` into this folder, `Lab07`
+
+- TODO: address PATH update?
+
+- Modify polo so that when it is run, it should `cd` you back to the directory where you executed `marco`. (1 pt)
+  - Hint: For `polo` to work in your shell, you are going to have to run it differently than `marco`.  The shell you are running in is the parent shell.  When you execute a script, it does its work in a "subshell".  If you run `polo` on its own, it might not create errors, but it also won't change into the directory in your shell, the parent shell - it did the action in the subshell!  To make it do the action in our shell, the parent shell, play with using `source` or `.`  
+
 ## Part 4: Gitting Branchy (5 pts)
 
 Write the commands associated with the actions below. When asked to view a result, write in your notes that you do or do not see the corresponding confirmation.
