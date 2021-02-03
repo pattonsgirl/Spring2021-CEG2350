@@ -1,0 +1,14 @@
+#! /bin/bash
+hippo="bananas"
+
+if [[ $hippo = "bananas" ]]
+then
+	echo "Success"
+fi
+
+if [[ -f demo.txt ]]
+then
+	echo "The file already exists"
+else 
+	touch demo.txt
+fi

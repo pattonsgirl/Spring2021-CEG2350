@@ -1,0 +1,8 @@
+#! /bin/bash
+
+if [[ $1 =~ ^\w+\.md$ ]] # && -f $1 ]]
+then
+	echo "is a file that end in .md"
+else
+	echo "Why you do this?"
+fi
