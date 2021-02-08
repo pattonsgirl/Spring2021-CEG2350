@@ -66,10 +66,10 @@ Email: Your email
 
 ## Extra Credit (2 pt):
 
-- Create an additional source code file that the original uses as a dependency. Perhaps you main code file calls on a function that is detailed in the other file (function can do a simple action, like print a message).
+- Create an additional source code file that the original uses as a dependency. Perhaps your main code file calls on a function that is detailed in the other file (function can do a simple action, like print a message).
   - You may use an old / existing multifile project (again, just need to require compilation)
 - Modify your `Makefile` to compile the original file & its new dependency. Note that your `Makefile` should have an updated version of the pre requisites to compile the program.
--  Don't forget to `commit` and `push` your updates for grading.
+- Don't forget to `commit` and `push` your updates for grading.
 
 ## Submission
 

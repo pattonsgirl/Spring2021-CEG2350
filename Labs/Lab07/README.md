@@ -61,6 +61,7 @@ See [Remaking your AWS Educate environment](../../..) for instructions.
 Copy the `marco` and `polo` script from `Lab04` into this folder, `Lab07`
 
 - TODO: address PATH update?
+- Create a hard link to `polo` in your `Lab05` folder.
 
 - Modify polo so that when it is run, it should `cd` you back to the directory where you executed `marco`. (1 pt)
   - Hint: For `polo` to work in your shell, you are going to have to run it differently than `marco`.  The shell you are running in is the parent shell.  When you execute a script, it does its work in a "subshell".  If you run `polo` on its own, it might not create errors, but it also won't change into the directory in your shell, the parent shell - it did the action in the subshell!  To make it do the action in our shell, the parent shell, play with using `source` or `.`  
