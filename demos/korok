@@ -1,0 +1,26 @@
+#! /bin/bash
+
+function hippo {
+	echo "from function hippo"
+	echo "from function args $1"
+}
+
+giraffe () {
+	echo "from function giraffe"
+	echo "From command line args $1"
+}
+
+giraffe $1
+hippo hello
+echo $1
+
+echo "You found me!"
+echo "Please give me a word?"
+input=""
+# read input
+echo $input
+
+for word in $@ # 'banana apple orange'
+do
+	echo $word
+done
