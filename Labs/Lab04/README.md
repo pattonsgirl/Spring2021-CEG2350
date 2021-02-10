@@ -48,9 +48,9 @@ Email: Your email
 - Add your working `export` command to your home directory's `.profile`.  
     - If you really mess up, there is a backup `.profile` file [here](.profile-backup).  You can copy and paste the contents.
 
-3. Modify `marco` so that when it is run, it should save the current working directory in a file so that `polo` can reference it. (1 pt)
+4. Modify `marco` so that when it is run, it should save the current working directory in a file so that `polo` can reference it. (1 pt)
   - Hint: If `marco` can be ran in any directory and `polo` can be run in any directory, should the path to the file be relative or absolute?
-4. Modify `polo` so that when it is run, it echos the command the user needs to go to the directory `marco` was called in.
+5. Modify `polo` so that when it is run, it echos the command the user needs to go to the directory `marco` was called in.
 
 ## Part 3: The Git Part (1 pt)
 
