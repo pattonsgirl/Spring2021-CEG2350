@@ -1,4 +1,4 @@
-# Lab 05 - NOT FINALIZED
+# Lab 05
 
 ## Lab Procedure
 
@@ -31,9 +31,9 @@ Email: Your email
 
 ## Part 2: Compile Source Code (4 pts)
 
-1. Find the location of the C compiler, `gcc`. Use a command to find out which version of `gcc` is running. (1 pt)  
+1. Find the location of the C compiler, `gcc`. Write the command to find out which version of `gcc` is running. (1 pt)  
    **Useful commands: `whereis, which, man`**
-2. Find the location of the Java compiler, `javac`. Use a command to find out which version of `javac` is running. (1 pt)  
+2. Find the location of the Java compiler, `javac`. Write the command to find out which version of `javac` is running. (1 pt)  
    **Useful commands: `whereis, which, man`**
 3. Compile your code using the corresponding compiler. Write the command you used to compile your source code. (1 pt)
 4. Run your program. Write the command you used to run your compiled program. (1 pt)
@@ -50,7 +50,6 @@ Email: Your email
    - `make` will compile the program and create an executable version if the source code file exists (1 pt)
    - `make run` will execute the program if the compiled program exists (1 pt)
    - `make clean` will delete the compiled program (1 pt)
-3. Copy the contents of your `Makefile` into your lab notes.
 
 **Resources**
 
