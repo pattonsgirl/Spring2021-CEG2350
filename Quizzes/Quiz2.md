@@ -3,7 +3,7 @@
 1. In a git repository, I have added a new file for tracking.  What command needs to be run before I can push?
 
 - If the file has been added for tracking (`git add filename`) then there needs to be a commit containing changes before a push can occur
-- `git push -a -m "Details of changes"`
+- `git commit -a -m "Details of changes"`
 
 2. T/F If a hard link is created between files in different directories, the files will have the same inode number, or disk location.
 
