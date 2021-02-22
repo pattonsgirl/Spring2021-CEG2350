@@ -9,7 +9,9 @@
 ## Basics
 
 1. Operating systems as jargon – Windows, Linux, Mac
+   - Operating systems exist, these are the big three
 2. Linux distributions: Ubuntu, Debian, RedHat, etc
+   - They do exist
 3. Intro to course tools (AWS & MobaXTerm)
 4. Intro to shells (bash, sh, zsh, powershell, ssh) and commands (man, vim, history)
 5. Intro to ssh & key pairs
@@ -39,7 +41,6 @@
 5. Hard links & soft links (ln)
 6. Inodes
     - Commands: stat
-7. File locks
 
 ## Scripting
 
