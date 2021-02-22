@@ -1,6 +1,11 @@
 # Midterm Review for CEG 2350
 ## Spring 2021
 
+## Da Rules:
+- Open 2/24 from 8:00 AM to 11:59 PM
+- 1 attempt, 2 hours once started
+- Open note, open terminal
+
 ## Basics
 
 1. Operating systems as jargon – Windows, Linux, Mac
@@ -60,3 +65,11 @@
    - Linux ELF (Executable & Linkable Format)
    - Windows EXE
 6. Commands: make
+
+
+# PS. Lab Redo Opportunity
+- Redo ONE Lab of Labs 1-5
+- Due 2/26 at 11:59 PM
+- Dropboxes open tomorrow
+- Redo the *whole* lab not just the parts you missed
+- Highest attempt will prevail
