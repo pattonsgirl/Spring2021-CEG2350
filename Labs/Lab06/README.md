@@ -79,11 +79,11 @@ Perform the following in your AWS instance.  For this part, work in your user's 
    - Notes: `cat` would work, but also might act like its hanging.  `strings` is kind of like `cat` but it will ONLY print the strings of printable characters in files.
 9. Mount the filesystem once more, and delete / remove one of the files.  Unmount the filesystem, and run `strings` again.  Can you see the contents of your files?
    - Notes: this is the big scary deal about data and disks and making sure data gets overwritten on a disk if the data needs to truly go away.  When you delete a file, all you've done is delete the inode association (you can't vim it, and you can't use an inode to get back to it), but the data is still written to the disk until it is overwritten (which could happen given enough time).  Removing a file is like throwing away a letter.  If the letter is still whole, it can be pulled back out and read.
-10. Add this filesystem to be automounted by the OS using `/etc/fstab`
-   - Write the line you added to `/etc/fstab`
-   - Hint: the line should be in the format of:
-      - `/absolute/path/to/filesystem` **tab** `/absolute/path/to/directory/to/mount/to` **tab** `defaults` **tab** `0 0`
-   - `reboot` the system and use `df -h` or head back to your `usable` folder to verify the mount worked (as in the file(s) you didn't delete should be viewable in the folder with `ls`)
+10. Add this filesystem to be automounted by the OS using `/etc/fstab`  
+      - Write the line you added to `/etc/fstab`
+      - Hint: the line should be in the format of:
+         - `/absolute/path/to/filesystem` **tab** `/absolute/path/to/directory/to/mount/to` **tab** `defaults` **tab** `0 0`
+      - `reboot` the system and use `df -h` or head back to your `usable` folder to verify the mount worked (as in the file(s) you didn't delete should be viewable in the folder with `ls`)
 
 ## Part 4: The Git Part (1 pt)
 
