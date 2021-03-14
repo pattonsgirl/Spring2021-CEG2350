@@ -42,19 +42,19 @@ Find out the following information about your personal system. Write the answers
 
 Use your AWS / Ubuntu system to discover the following information.
 
-1. Read `/boot/grub/menu.lst`. What boot options would the `grub` menu present?
+1. Read `/boot/grub/menu.lst`. What boot options would the `grub` menu present? (1 pt)
    - Note: since we are using a remote connection, we will never see / interact with the `grub` menu. But it is still there.
-2. Using the command `df -h`, determine how much disk space is used and how much space is free.
+2. Using the command `df -h`, determine how much disk space is used and how much space is free. (1 pt)
 3. Run the command `sudo parted -l` to answer the following:
-   - What is the primary disk in the `/dev` folder?
-   - What type of partition table is the device using?
-     - Hint: If it looks unfamilar, use Google to find the common name
-   - What file system is used by the device?
+   - What is the primary disk in the `/dev` folder? (.33 pt)
+   - What type of partition table is the device using? (.33 pt)
+     - Hint: If it looks unfamilar, use Google to find a more common name
+   - What file system is used by the device? (.33 pt)
 4. Use `lshw` to find the following:
-   - BIOS version
-   - CPU brand and info
-   - Memory size
-5. Does this system have a swap file (use virtual memory)? Write how you checked.
+   - BIOS version (.33 pt)
+   - CPU brand and info (.33 pt)
+   - Memory size (.33 pt)
+5. Does this system have a swap file (use virtual memory)? Write how you checked. (1 pt)
    - [Hint](https://unix.stackexchange.com/questions/23072/how-can-i-check-if-swap-is-active-from-the-command-line)
 
 ## Part 4: The Git Part (1 pt)
