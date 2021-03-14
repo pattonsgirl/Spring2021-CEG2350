@@ -1,91 +1,29 @@
-# Lab 07 - NOT FINALIZED
+## Part 3: Create a filesystem from a file to store files (10 pts)
 
-## Lab Procedure
+Perform the following in your AWS instance.  For this part, work in your user's home directory (`/home/ubuntu`), not your repository.  Your answers will still go in your `README.md` file associated with this lab.
 
-Document your progress in a plain text file named `Lab07-LastName.txt`  
-where LastName is your last name
-
-At the top of the file please enter your personal details as follows:
-
-```
-Name: Your name
-Email: Your email
-
-```
-
-**Where questions are presented, answer them in your lab notes. For each step, include the command you used to perform the direction or answer the question posed.** If you did something "wrong" make a note of it in your lab. These are learning experiences.
-
-If you've lost or forgotten your key, you'll need to provision a new stack in AWS Educate and create a new key.  
-See [Remaking your AWS Educate environment](../../..) for instructions.
-
-## Part 1: To Infinity (2 pts)
-
-1. Create a `Lab07` folder in your github repository in your AWS account.
-2. Create a script in the folder that runs an infinite loop. Each time the loop runs it should do the following
-   - Outputs a statement to a file called `still-going.txt`
-   - Sleeps for 15 seconds
-   - Repeats. Infinitely!
-3. Paste your script into your lab notes.
-4. `add`, `commit` and `push` your folder & script to your repository
-
-**Resources**
-
-- [bash while loop](https://linuxize.com/post/bash-while-loop/)
-- [sleep bash scripting](https://www.cyberciti.biz/faq/linux-unix-sleep-bash-scripting/)
-
-## Part 2: Terminally Attached (5 pts)
-
-1. Connect to your AWS system in two different terminals. Note the PID of the terminal you will monitor processes on and the PID of the terminal you will expirement with running your script. (1 pt)
-2. Run the script you created in your terminal. Note the PID. Craft a command to kill the process. (1 pt)
-3. Run your script with `source`. Note the PID. What is interesting about the PID? How can you kill the process? (1 pt)
-4. Run the script in the background. Note the PID. Craft a command to kill the background process. (2 pt)
-
-**Resources**
-
-- [How To Use Bash's Job Control to Manage Foreground and Background Processes](https://www.digitalocean.com/community/tutorials/how-to-use-bash-s-job-control-to-manage-foreground-and-background-processes)
-- [Understanding foreground and background Linux processes](https://linuxconfig.org/understanding-foreground-and-background-linux-processes)
-
-## Part 3: Terminally Detached (3 pts)
-
-1. Run your script in `screen`. Write the command(s) to set up the screen, run your script inside, and detach from the screen.
-2. Use `exit` to disconnect from the terminal.
-3. Go back in, write the command(s) to reattach the screen.
-4. Write the command(s) to end the screen session.
-
-**Resources**
-
-- [How to Use Linux Screen Command](https://www.howtogeek.com/662422/how-to-use-linuxs-screen-command/)
-
-## Marco! Polo!
-
-Copy the `marco` and `polo` script from `Lab04` into this folder, `Lab07`
-
-- TODO: address PATH update?
-- Create a hard link to `polo` in your `Lab05` folder.
-
-- Modify polo so that when it is run, it should `cd` you back to the directory where you executed `marco`. (1 pt)
-  - Hint: For `polo` to work in your shell, you are going to have to run it differently than `marco`.  The shell you are running in is the parent shell.  When you execute a script, it does its work in a "subshell".  If you run `polo` on its own, it might not create errors, but it also won't change into the directory in your shell, the parent shell - it did the action in the subshell!  To make it do the action in our shell, the parent shell, play with using `source` or `.`  
-
-## Part 4: Gitting Branchy (5 pts)
-
-Write the commands associated with the actions below. When asked to view a result, write in your notes that you do or do not see the corresponding confirmation.
-
-1. Create a branch in your git repository called `development` (1 pt)
-2. Switch to the branch.
-3. Create a new file with some text in it on the branch and add + commit it to the branch.
-4. Push your changes (and your branch) to remote (GitHub) (1 pt)
-   - Note: if you try `git push` git will spit out a helpful hint
-5. On GitHub, switch to the branch and confirm that your new file is there. Confirm that it is not yet on the `master`/`main` branch
-6. Switch back to the `master`/`main` branch. (1 pt)
-7. Merge the `development` branch with the `master`/`main` branch (1 pt)
-8. Push the `master`/`main` branch to remote. (1 pt)
-9. In GitHub, confirm your file that you created on the branch now exists in `master`/`main`
-
-**Resources:**
-
-- [Git Branches in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
-- [Git - Basic Branching & Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
-
-## Submission
-
-Upload your file named `Lab07-LastName.txt` to the Pilot Dropbox.
+1. Create a file of a defined amount of space: `dd if=/dev/zero of=space bs=1024 count=0 seek=$[1024*100]`
+   - Explain `if` and `of`
+   - Explain what `/dev/zero` is
+   - What size file was created?
+2. Create a filesystem on this file.  Write the command you used.
+   - **Useful commands:** `mkfs`
+3. Mount the filesystem to your home directory in the folder `usable`.  Write the command you used.
+   - **Useful commands:** `mount`, `mkdir`
+4. Check to see if the filesystem was mounted according to the output of `df -h`  Paste the line that indicates where it was mounted and space usage
+   - Notes: you may see and be wondering about `/dev/loop#`  loop is what happens when you are using a file that has a filesystem inside, which is exactly what happened - we used `dd` to create a file filled with 0's, then we used `mkfs` to have the file be a filesystem.
+   - [More info on `/dev/loop#`](https://en.wikipedia.org/wiki/Loop_device)
+5. Go in to the folder `usable` and create some new files with some text inside.  Write the steps this took and if you changed permission sets.
+6. Unmount the filesystem currently mounted to `usable`.  Write the command you used.
+   - **Useful commands:** `umount`
+7. Can you still access the files?  Why or why not?
+8. While the filesystem is still unmounted, run `strings` on `space`.  What do you see?  Can you see the contents of your files?
+   - Notes: `cat` would work, but also might act like its hanging.  `strings` is kind of like `cat` but it will ONLY print the strings of printable characters in files.
+9. Mount the filesystem once more, and delete / remove one of the files.  Unmount the filesystem, and run `strings` again.  Can you see the contents of your files?
+   - Notes: this is the big scary deal about data and disks and making sure data gets overwritten on a disk if the data needs to truly go away.  When you delete a file, all you've done is delete the inode association (you can't vim it, and you can't use an inode to get back to it), but the data is still written to the disk until it is overwritten (which could happen given enough time).  Removing a file is like throwing away a letter.  If the letter is still whole, it can be pulled back out and read.
+10. Add this filesystem to be automounted by the OS using `/etc/fstab`  
+      - Write the line you added to `/etc/fstab`
+      - Hint: the line should be in the format of:
+         - `/absolute/path/to/filesystem` **tab** `/absolute/path/to/directory/to/mount/to` **tab** `defaults` **tab** `0 0`
+         - [More info on `fstab`](https://en.wikipedia.org/wiki/Fstab)
+      - `reboot` the system and use `df -h` or head back to your `usable` folder to verify the mount worked (as in the file(s) you didn't delete should be viewable in the folder with `ls`)

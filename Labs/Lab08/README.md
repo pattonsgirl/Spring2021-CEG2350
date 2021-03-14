@@ -1,8 +1,8 @@
-# Lab 08 - NOT FINALIZED
+# Lab 07 - NOT FINALIZED
 
 ## Lab Procedure
 
-Document your progress in a plain text file named `Lab08-LastName.txt`  
+Document your progress in a plain text file named `Lab07-LastName.txt`  
 where LastName is your last name
 
 At the top of the file please enter your personal details as follows:
@@ -18,79 +18,74 @@ Email: Your email
 If you've lost or forgotten your key, you'll need to provision a new stack in AWS Educate and create a new key.  
 See [Remaking your AWS Educate environment](../../..) for instructions.
 
-## Part 1: [/insert AOL noises here/](https://www.youtube.com/watch?v=D1UY7eDRXrs) (11 pts)
+## Part 1: To Infinity (2 pts)
 
-For your local / personal system, identify the following information regarding your network connection:
-
-1. Network interface
-2. MAC address
-3. IP Address
-4. Subnet mask
-5. Gateway
-6. Is your IP address public or private?
-
-On your AWS system, use `ifconfig` and `curl ipinfo.io` and read `/etc/hostname` to fill out the following:
-
-7. AWS system private IP address:
-8. AWS system private hostname:
-9. AWS system public IP address:
-10. AWS system public hostname:
-11. Which of these IP addresses do you use to access your AWS system?
-
-## Part 2: Snakes and Browsers (5 pts)
-
-1. Install the `jupyter` package. Note the command you used. (1 pt)
-
-2. On your AWS system, start a `jupyter notebook` with the no browser option. Copy the output into your lab notes. (1 pt)
-
-   - Note: use `jupyter notebook --help`
-
-3. Open a second terminal on your local system (do not `ssh` into the AWS system). Forward the port running `jupyter notebook` to your local system and open the notebook in your browser by following the steps below:
-   - Use `ssh` to forward the port as follows:
-   - `ssh -N -f -i your_private_key -L localhost:8888:localhost:8888 ubuntu@your_elastic_ip`
-   - In your browser, type the following URL: `localhost:8888`
-   - Paste the token (see your output from step 2) to get in.
-   - Write the token in your lab notes (1 pt)
-4. Answer the following: (2 pts)
-   - What flags are in the `ssh` command in Step 3, and what do they do?
-   - What files are displayed in the browser (what system are they from)?
+1. Create a `Lab07` folder in your github repository in your AWS account.
+2. Create a script in the folder that runs an infinite loop. Each time the loop runs it should do the following
+   - Outputs a statement to a file called `still-going.txt`
+   - Sleeps for 15 seconds
+   - Repeats. Infinitely!
+3. Paste your script into your lab notes.
+4. `add`, `commit` and `push` your folder & script to your repository
 
 **Resources**
 
-- [Running a Jupyter Notebook](https://ljvmiranda921.github.io/notebook/2018/01/31/running-a-jupyter-notebook/)
-- [Jupyter Notebook Tutorial - Go to Creating Your First Notebook](https://www.dataquest.io/blog/jupyter-notebook-tutorial/)
+- [bash while loop](https://linuxize.com/post/bash-while-loop/)
+- [sleep bash scripting](https://www.cyberciti.biz/faq/linux-unix-sleep-bash-scripting/)
 
-## Part 3: Get Off my Port (3 pts)
+## Part 2: Terminally Attached (5 pts)
 
-A common issue is that a port you want to listen on is already taken by another process. Let’s learn how to discover that process pid.
+1. Connect to your AWS system in two different terminals. Note the PID of the terminal you will monitor processes on and the PID of the terminal you will expirement with running your script. (1 pt)
+2. Run the script you created in your terminal. Note the PID. Craft a command to kill the process. (1 pt)
+3. Run your script with `source`. Note the PID. What is interesting about the PID? How can you kill the process? (1 pt)
+4. Run the script in the background. Note the PID. Craft a command to kill the background process. (2 pt)
 
-1. Install the `http` package for python using `pip` (1 pt)
+**Resources**
 
-   - Write the command to install `pip` for `python`
-   - Write the command to install `http` with `pip`
+- [How To Use Bash's Job Control to Manage Foreground and Background Processes](https://www.digitalocean.com/community/tutorials/how-to-use-bash-s-job-control-to-manage-foreground-and-background-processes)
+- [Understanding foreground and background Linux processes](https://linuxconfig.org/understanding-foreground-and-background-linux-processes)
 
-2. In one terminal, execute `python3 -m http.server 4444` to start a minimal web server listening on port 4444.
+## Part 3: Terminally Detached (3 pts)
 
-3. Craft a command that uses `lsof` to show only the LISTEN[ing] ports on the system. Write the command in your notes and paste the output of running the command. (1 pt)
+1. Run your script in `screen`. Write the command(s) to set up the screen, run your script inside, and detach from the screen.
+2. Use `exit` to disconnect from the terminal.
+3. Go back in, write the command(s) to reattach the screen.
+4. Write the command(s) to end the screen session.
 
-   - Useful commands: `lsof`, `|`, `grep`
+**Resources**
 
-4. Find that process pid and terminate it by running `kill <PID>`. Note the command in your notes(1 pt)
+- [How to Use Linux Screen Command](https://www.howtogeek.com/662422/how-to-use-linuxs-screen-command/)
 
-## Part 4: The Git Part (1 pt)
+## Marco! Polo!
 
-1. Create a folder in your repository called `Lab08`. Create a file called `README.md`. Copy and paste your lab notes into the file. `add`, `commit` and `push` your file to remote.
+Copy the `marco` and `polo` script from `Lab04` into this folder, `Lab07`
 
-2. What branch are you on? (1 pt)
+- TODO: address PATH update?
+- Create a hard link to `polo` in your `Lab05` folder.
 
-## Extra Credit: Good listening (2 pts)
+- Modify polo so that when it is run, it should `cd` you back to the directory where you executed `marco`. (1 pt)
+  - Hint: For `polo` to work in your shell, you are going to have to run it differently than `marco`.  The shell you are running in is the parent shell.  When you execute a script, it does its work in a "subshell".  If you run `polo` on its own, it might not create errors, but it also won't change into the directory in your shell, the parent shell - it did the action in the subshell!  To make it do the action in our shell, the parent shell, play with using `source` or `.`  
 
-Echo a message over a port. When a connection is made on `localhost` or using the public IP, the message should print until the connection is terminated.
+## Part 4: Gitting Branchy (5 pts)
+
+Write the commands associated with the actions below. When asked to view a result, write in your notes that you do or do not see the corresponding confirmation.
+
+1. Create a branch in your git repository called `development` (1 pt)
+2. Switch to the branch.
+3. Create a new file with some text in it on the branch and add + commit it to the branch.
+4. Push your changes (and your branch) to remote (GitHub) (1 pt)
+   - Note: if you try `git push` git will spit out a helpful hint
+5. On GitHub, switch to the branch and confirm that your new file is there. Confirm that it is not yet on the `master`/`main` branch
+6. Switch back to the `master`/`main` branch. (1 pt)
+7. Merge the `development` branch with the `master`/`main` branch (1 pt)
+8. Push the `master`/`main` branch to remote. (1 pt)
+9. In GitHub, confirm your file that you created on the branch now exists in `master`/`main`
+
+**Resources:**
+
+- [Git Branches in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
+- [Git - Basic Branching & Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
 
 ## Submission
 
-Upload your file named `Lab08-LastName.txt` to the Pilot Dropbox.
-
-### Credits:
-
-Exercise based on https://missing.csail.mit.edu/2020/debugging-profiling/
+Upload your file named `Lab07-LastName.txt` to the Pilot Dropbox.
