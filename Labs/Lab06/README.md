@@ -57,7 +57,7 @@ Use your AWS / Ubuntu system to discover the following information.
 5. Does this system have a swap file (use virtual memory)? Write how you checked. (1 pt)
    - [Hint](https://unix.stackexchange.com/questions/23072/how-can-i-check-if-swap-is-active-from-the-command-line)
 
-## Part 4: The Git Part (1 pt)
+## Part 3: The Git Part (1 pt)
 
 1. Use `git` commands to `add`, `commit` and `push` the `Lab06` folder to GitHub.
 
