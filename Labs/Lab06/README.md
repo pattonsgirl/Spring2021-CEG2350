@@ -37,6 +37,7 @@ Find out the following information about your personal system. Write the answers
 7. Get to your UEFI BIOS. Note what you did to access it. Then run away. (1 pt)
    - If you don't own the machine (and therefore may not be able to access the BIOS), lookup information about the machine and what steps would have worked.
    - Note for Chromebook users: Document what your tried and what you learned about your system.
+   - Note for Mac users: [This article](https://www.techwalla.com/articles/macbook-efi-access) may help
 
 ## Part 2: Exploration (5 pts)
 
