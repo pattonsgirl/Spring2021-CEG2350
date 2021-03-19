@@ -51,18 +51,17 @@ Perform the following in your AWS instance.  For this part, work in your user's 
 
 ## Part 2: Gitting Branchy (5 pts)
 
-Write the commands associated with the actions below. When asked to view a result, write in your notes that you do or do not see the corresponding confirmation.
-
 1. Create a branch in your git repository called `development` (1 pt)
 2. Switch to the branch.
-3. Create a new file with some text in it on the branch and add + commit it to the branch.
+3. Edit `README.md` to include the commands you used to create the branch and switch to the branch.
 4. Push your changes (and your branch) to remote (GitHub) (1 pt)
    - Note: if you try `git push` git will spit out a helpful hint
-5. On GitHub, switch to the branch and confirm that your new file is there. Confirm that it is not yet on the `master`/`main` branch
+5. On GitHub, switch to the branch and confirm that your edits to `README.md` exist in the `development` branch's version of the file, but not in the `main` branch's version.
 6. Switch back to the `master`/`main` branch. (1 pt)
 7. Merge the `development` branch with the `master`/`main` branch (1 pt)
-8. Push the `master`/`main` branch to remote. (1 pt)
-9. In GitHub, confirm your file that you created on the branch now exists in `master`/`main`
+8. Edit `README.md` to include the commands you used to switch back to the `master`/`main` branch and merge the `development` branch with `master`/`main`
+9. Push the `master`/`main` branch to remote (GitHub). (1 pt)
+10. In GitHub, confirm your file now exits in `master`/`main` with both the changes for branch creation and branch merging.
 
 **Resources:**
 
