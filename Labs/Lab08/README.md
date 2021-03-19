@@ -1,11 +1,18 @@
-# Lab 07 - NOT FINALIZED
+# Lab 08 - NOT FINALIZED
 
 ## Lab Procedure
 
-Document your progress in a plain text file named `Lab07-LastName.txt`  
-where LastName is your last name
+**For each step, include the command you used to perform the direction or answer the question posed.** If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.  
+`ssh` in to your AWS environment. If you've forgotten your key, you'll need to provision a new stack in AWS Educate and create a new key.  
+See [Remaking your AWS Educate environment](../../..) for instructions.
 
-At the top of the file please enter your personal details as follows:
+1. Go to the folder in which you cloned your Git repository for this course.
+   - Path of `/home/ubuntu/spring2021-ceg2350-YOURGITHUBUSERNAME/` OR `/home/ubuntu/git/spring2021-ceg2350-YOURGITHUBUSERNAME/` depending on your setup
+2. Create a directory called `Lab08`
+   - Path of `/home/ubuntu/spring2021-ceg2350-YOURGITHUBUSERNAME/Lab08` OR `/home/ubuntu/git/spring2021-ceg2350-YOURGITHUBUSERNAME/Lab08` depending on your setup
+3. In this directory, create a file called `README.md`
+4. This `README.md` file is where you will put your answers to this lab. I recommend creating two connections to your Linux AWS so you can keep the `README.md` file open while you expirement with the lab.
+   - At the top of the file please enter your personal details as follows:
 
 ```
 Name: Your name
@@ -13,14 +20,9 @@ Email: Your email
 
 ```
 
-**Where questions are presented, answer them in your lab notes. For each step, include the command you used to perform the direction or answer the question posed.** If you did something "wrong" make a note of it in your lab. These are learning experiences.
-
-If you've lost or forgotten your key, you'll need to provision a new stack in AWS Educate and create a new key.  
-See [Remaking your AWS Educate environment](../../..) for instructions.
-
 ## Part 1: To Infinity (2 pts)
 
-1. Create a `Lab07` folder in your github repository in your AWS account.
+1. Create a `Lab08` folder in your github repository in your AWS account.
 2. Create a script in the folder that runs an infinite loop. Each time the loop runs it should do the following
    - Outputs a statement to a file called `still-going.txt`
    - Sleeps for 15 seconds
@@ -66,26 +68,12 @@ Copy the `marco` and `polo` script from `Lab04` into this folder, `Lab07`
 - Modify polo so that when it is run, it should `cd` you back to the directory where you executed `marco`. (1 pt)
   - Hint: For `polo` to work in your shell, you are going to have to run it differently than `marco`.  The shell you are running in is the parent shell.  When you execute a script, it does its work in a "subshell".  If you run `polo` on its own, it might not create errors, but it also won't change into the directory in your shell, the parent shell - it did the action in the subshell!  To make it do the action in our shell, the parent shell, play with using `source` or `.`  
 
-## Part 4: Gitting Branchy (5 pts)
+## Part 3: The Git Part (1 pt)
 
-Write the commands associated with the actions below. When asked to view a result, write in your notes that you do or do not see the corresponding confirmation.
-
-1. Create a branch in your git repository called `development` (1 pt)
-2. Switch to the branch.
-3. Create a new file with some text in it on the branch and add + commit it to the branch.
-4. Push your changes (and your branch) to remote (GitHub) (1 pt)
-   - Note: if you try `git push` git will spit out a helpful hint
-5. On GitHub, switch to the branch and confirm that your new file is there. Confirm that it is not yet on the `master`/`main` branch
-6. Switch back to the `master`/`main` branch. (1 pt)
-7. Merge the `development` branch with the `master`/`main` branch (1 pt)
-8. Push the `master`/`main` branch to remote. (1 pt)
-9. In GitHub, confirm your file that you created on the branch now exists in `master`/`main`
-
-**Resources:**
-
-- [Git Branches in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
-- [Git - Basic Branching & Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+1. Use `git` commands to `add`, `commit` and `push` the `Lab08` folder to GitHub.
 
 ## Submission
 
-Upload your file named `Lab07-LastName.txt` to the Pilot Dropbox.
+In your GitHub repository, select the green `Code` button then select `Download ZIP`. Upload this zip file to the Pilot Dropbox.
+
+In the `Comment` area in the Pilot Dropbox, copy URL / link to the repository corresponding to the project your are submitting.
