@@ -1,22 +1,24 @@
-# Lab 08 - NOT FINALIZED
+# Lab 09 - NOT FINALIZED
 
 ## Lab Procedure
 
-Document your progress in a plain text file named `Lab08-LastName.txt`  
-where LastName is your last name
+**For each step, include the command you used to perform the direction or answer the question posed.** If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.  
+`ssh` in to your AWS environment. If you've forgotten your key, you'll need to provision a new stack in AWS Educate and create a new key.  
+See [Remaking your AWS Educate environment](../../..) for instructions.
 
-At the top of the file please enter your personal details as follows:
+1. Go to the folder in which you cloned your Git repository for this course.
+   - Path of `/home/ubuntu/spring2021-ceg2350-YOURGITHUBUSERNAME/` OR `/home/ubuntu/git/spring2021-ceg2350-YOURGITHUBUSERNAME/` depending on your setup
+2. Create a directory called `Lab09`
+   - Path of `/home/ubuntu/spring2021-ceg2350-YOURGITHUBUSERNAME/Lab09` OR `/home/ubuntu/git/spring2021-ceg2350-YOURGITHUBUSERNAME/Lab09` depending on your setup
+3. In this directory, create a file called `README.md`
+4. This `README.md` file is where you will put your answers to this lab. I recommend creating two connections to your Linux AWS so you can keep the `README.md` file open while you expirement with the lab.
+   - At the top of the file please enter your personal details as follows:
 
 ```
 Name: Your name
 Email: Your email
 
 ```
-
-**Where questions are presented, answer them in your lab notes. For each step, include the command you used to perform the direction or answer the question posed.** If you did something "wrong" make a note of it in your lab. These are learning experiences.
-
-If you've lost or forgotten your key, you'll need to provision a new stack in AWS Educate and create a new key.  
-See [Remaking your AWS Educate environment](../../..) for instructions.
 
 ## Part 1: [/insert AOL noises here/](https://www.youtube.com/watch?v=D1UY7eDRXrs) (11 pts)
 
@@ -77,19 +79,20 @@ A common issue is that a port you want to listen on is already taken by another 
 
 4. Find that process pid and terminate it by running `kill <PID>`. Note the command in your notes(1 pt)
 
-## Part 4: The Git Part (1 pt)
-
-1. Create a folder in your repository called `Lab08`. Create a file called `README.md`. Copy and paste your lab notes into the file. `add`, `commit` and `push` your file to remote.
-
-2. What branch are you on? (1 pt)
-
 ## Extra Credit: Good listening (2 pts)
 
 Echo a message over a port. When a connection is made on `localhost` or using the public IP, the message should print until the connection is terminated.
 
+## Part 3: The Git Part (1 pt)
+
+1. Use `git` commands to `add`, `commit` and `push` the `Lab09` folder to GitHub.
+
 ## Submission
 
-Upload your file named `Lab08-LastName.txt` to the Pilot Dropbox.
+In your GitHub repository, select the green `Code` button then select `Download ZIP`. Upload this zip file to the Pilot Dropbox.
+
+In the `Comment` area in the Pilot Dropbox, copy URL / link to the repository corresponding to the project your are submitting.
+
 
 ### Credits:
 

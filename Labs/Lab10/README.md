@@ -1,21 +1,24 @@
-# Lab 09 - NOT FINALIZED
+# Lab 10 - NOT FINALIZED
 
 ## Lab Procedure
 
-Document your progress in a plain text file named `Lab09-LastName.txt`  
-where LastName is your last name
+**For each step, include the command you used to perform the direction or answer the question posed.** If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.  
+`ssh` in to your AWS environment. If you've forgotten your key, you'll need to provision a new stack in AWS Educate and create a new key.  
+See [Remaking your AWS Educate environment](../../..) for instructions.
 
-At the top of the file please enter your personal details as follows:
+1. Go to the folder in which you cloned your Git repository for this course.
+   - Path of `/home/ubuntu/spring2021-ceg2350-YOURGITHUBUSERNAME/` OR `/home/ubuntu/git/spring2021-ceg2350-YOURGITHUBUSERNAME/` depending on your setup
+2. Create a directory called `Lab10`
+   - Path of `/home/ubuntu/spring2021-ceg2350-YOURGITHUBUSERNAME/Lab10` OR `/home/ubuntu/git/spring2021-ceg2350-YOURGITHUBUSERNAME/Lab10` depending on your setup
+3. In this directory, create a file called `README.md`
+4. This `README.md` file is where you will put your answers to this lab. I recommend creating two connections to your Linux AWS so you can keep the `README.md` file open while you expirement with the lab.
+   - At the top of the file please enter your personal details as follows:
 
 ```
 Name: Your name
 Email: Your email
+
 ```
-
-**Where questions are presented, answer them in your lab notes. For each step, include the command you used to perform the direction or answer the question posed.** If you did something "wrong" make a note of it in your lab. These are learning experiences.
-
-If you've lost or forgotten your key, you'll need to provision a new stack in AWS Educate and create a new key.  
-See [Remaking your AWS Educate environment](../../..) for instructions.
 
 ## Part 1: Makey Makey (8 pts)
 
@@ -59,15 +62,18 @@ In a previous lab, you made a key pair on your AWS system and used it to create 
 8. Do `git` commands still work in the folder you extracted? Write down your findings.
    - Hint: think back to ssh keys
 
-## Part 4: The Git Part (1 pt)
-
-1. Create a folder in your repository called `Lab09`. Create a file called `README.md`. Copy and paste your lab notes into the file. `add`, `commit` and `push` your file to remote.
-
 ## Extra Credit: G@M3R (4 pts)
 
 Install ninvader from the package above. For credit, you need to list how you installed ninvaders succesfully. Since it is a text based C language game, you will need an additional library in C, called `ncurses`.  
 Note: You may use the package manager (`apt`) to install the ncurses library, but you may **not** use the package manager (`apt`) to install ninvaders.
 
+## Part 3: The Git Part (1 pt)
+
+1. Use `git` commands to `add`, `commit` and `push` the `Lab10` folder to GitHub.
+
 ## Submission
 
-Upload your file named `Lab09-LastName.txt` to the Pilot Dropbox.
+In your GitHub repository, select the green `Code` button then select `Download ZIP`. Upload this zip file to the Pilot Dropbox.
+
+In the `Comment` area in the Pilot Dropbox, copy URL / link to the repository corresponding to the project your are submitting.
+
