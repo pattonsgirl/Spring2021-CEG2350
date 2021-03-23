@@ -47,7 +47,8 @@ Perform the following in your AWS instance.  For this part, work in your user's 
       - Hint: the line should be in the format of:
          - `/absolute/path/to/filesystem` **tab** `/absolute/path/to/directory/to/mount/to` **tab** `defaults` **tab** `0 0`
          - [More info on `fstab`](https://en.wikipedia.org/wiki/Fstab)
-      - `reboot` the system and use `df -h` or head back to your `usable` folder to verify the mount worked (as in the file(s) you didn't delete should be viewable in the folder with `ls`)
+      - Test your changes using the 'mount -a' command.  What does this command do?  
+      - Use `df -h` or head back to your `usable` folder to verify the mount worked (as in the file(s) you didn't delete should be viewable in the folder with `ls`)
 
 ## Part 2: Gitting Branchy (6 pts)
 
