@@ -1,1 +1,0 @@
-	.file	"c-cool.c"

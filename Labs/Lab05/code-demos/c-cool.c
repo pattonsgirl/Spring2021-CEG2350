@@ -1,4 +1,4 @@
-nclude <stdio.h>
+#include <stdio.h>
 #include <math.h>
 #include <ctype.h>
 #define PI 3.14159
@@ -9,6 +9,7 @@ double ring_area(double, double);
 int main(void) {
   double rad_outer = 8.5;
   double rad_inner = 5.5;
+  //area_ring = 56;
   double area_outer;
   double area_ring;
   char selection;
