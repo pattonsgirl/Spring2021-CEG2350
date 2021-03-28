@@ -1,4 +1,4 @@
-# Lab 08 - NOT FINALIZED
+# Lab 08
 
 ## Lab Procedure
 
@@ -74,6 +74,48 @@ Email: Your email
 ## Part 5: The Git Part (1 pt)
 
 1. Use `git` commands to `add`, `commit` and `push` the `Lab08` folder to GitHub.
+
+## Extra Credit: Conflict Resolution (2 pts)
+
+Last week you played with branching.  That was wonderful, but you got the feeling there may be problems looming on the horizon.  Among those problems is dealing with merge conflicts, where there exist two versions of the same file, and only one may survive.  So, you are going to pick one of the following strategies to create a merge conflict, then you are going to resolve the conflict.
+
+Documentation (and answers to questions) should be in your `Lab08` `README.md` file under the `Extra Credit` section at the end.  Note which option you ran with.
+
+- **Option A: Conflict between branches**
+   - Confirm you are on the `main` branch of your repository.
+   - Create a new file in your `Lab08` folder called `problem-child.txt`  Add some text to this file, just to get the party started.
+   - `add`, `commit` and `push` the file, and confirm you see the file on GitHub.
+   - Create / switch to a new branch called `improvements`
+   - Edit `problem-child.txt` in the `improvements` branch.
+   - `commit` and `push`.  Write the command to push this branch to GitHub
+   - Switch back to the `main` branch
+   - Don't `merge` yet - you'll ruin the expirement
+   - Making sure you are on the `main` branch, make some edits to `problem-child.txt`
+   - Now `merge` the `improvements` branch with `main`
+   - Summarize the output from making the `merge` between the two branches.
+   - Head to your file in the terminal.  What do you see?
+   - Resolve your conflict by modifying the file to no longer have the scary >>'s of doom and have the content you want to keep.
+   - Run `status`.  Summarize the output given and what you need to do next now that your file is in a happy state.
+   - Do the things.  Write the command(s) you used.
+- **Option B: Conflict from remote**
+   - Confirm you are on the `main` branch of your repository
+   - Create a new file in your `Lab08` folder called `problem-child.txt`  Add some text to this file, just to get the party started.
+   - `add`, `commit` and `push` the file, and confirm you see the file on GitHub.
+   - Make more edits to the file via your terminal.  You may `commit`, but don't `push` - you'll ruin the expirement.
+   - In GitHub, click into the file, then click the little edit button.  Make some edits, then `commit` to `main` at the bottom of the page.
+   - Now, back in your terminal, try to `push` those changes.  What is the result?
+   - Why do you need to `pull`?
+   - Summarize the output given by `pull`
+   - Head to your file in the terminal.  What do you see?
+   - Resolve your conflict by modifying the file to no longer have the scary >>'s of doom and have the content you want to keep.
+   - Run `status`.  Summarize the output given and what you need to do next now that your file is in a happy state.
+   - Do the things.  Write the command(s) you used.
+
+- Don't forget to `commit` and `push` your updates to the `README.md` file for grading.
+
+**Resources:**
+
+- [Git - Basic Branching & Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
 
 ## Submission
 
