@@ -50,6 +50,9 @@ Perform the following in your AWS instance.  For this part, work in your user's 
       - Test your changes using the 'mount -a' command.  What does this command do?  
       - Use `df -h` or head back to your `usable` folder to verify the mount worked (as in the file(s) you didn't delete should be viewable in the folder with `ls`)
 
+**Just in Case Resources:**
+- [Mount broken volume to new system](https://www.xtivia.com/blog/recovering-aws-instance-doesnt-start/)
+
 ## Part 2: Gitting Branchy (6 pts)
 
 1. Create a branch in your git repository called `development`
@@ -78,3 +81,5 @@ Perform the following in your AWS instance.  For this part, work in your user's 
 In your GitHub repository, select the green `Code` button then select `Download ZIP`. Upload this zip file to the Pilot Dropbox.
 
 In the `Comment` area in the Pilot Dropbox, copy URL / link to the repository corresponding to the project your are submitting.
+
+

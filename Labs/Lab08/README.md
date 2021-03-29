@@ -71,6 +71,10 @@ Email: Your email
   - Hint: For `polo` to work in your shell, you are going to have to run it differently than `marco`.  The shell you are running in is the parent shell.  When you execute a script, it does its work in a "subshell".  If you run `polo` on its own, it might not create errors, but it also won't change into the directory in your shell, the parent shell - it did the action in the subshell!  To make it do the action in our shell, the parent shell, play with using `source` or `.`  
 5. Write a basic `How To` guide for your `marco` and `polo` script here, including how to run each. (1 pt)
 
+**Resources**
+
+- [Using `cd` in bash scripts](https://www.baeldung.com/linux/cd-command-bash-script)
+
 ## Part 5: The Git Part (1 pt)
 
 1. Use `git` commands to `add`, `commit` and `push` the `Lab08` folder to GitHub.

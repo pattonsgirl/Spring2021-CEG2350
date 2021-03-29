@@ -42,11 +42,8 @@ On your AWS system, use `ifconfig` and `curl ipinfo.io` and read `/etc/hostname`
 ## Part 2: Snakes and Browsers (5 pts)
 
 1. Install the `jupyter` package. Note the command you used. (1 pt)
-
 2. On your AWS system, start a `jupyter notebook` with the no browser option. Copy the output into your lab notes. (1 pt)
-
    - Note: use `jupyter notebook --help`
-
 3. Open a second terminal on your local system (do not `ssh` into the AWS system). Forward the port running `jupyter notebook` to your local system and open the notebook in your browser by following the steps below:
    - Use `ssh` to forward the port as follows:
    - `ssh -N -f -i your_private_key -L localhost:8888:localhost:8888 ubuntu@your_elastic_ip`
@@ -67,25 +64,20 @@ On your AWS system, use `ifconfig` and `curl ipinfo.io` and read `/etc/hostname`
 A common issue is that a port you want to listen on is already taken by another process. Let’s learn how to discover that process pid.
 
 1. Install the `http` package for python using `pip` (1 pt)
-
    - Write the command to install `pip` for `python`
    - Write the command to install `http` with `pip`
-
 2. In one terminal, execute `python3 -m http.server 4444` to start a minimal web server listening on port 4444.
-
 3. Craft a command that uses `lsof` to show only the LISTEN[ing] ports on the system. Write the command in your notes and paste the output of running the command. (1 pt)
-
    - Useful commands: `lsof`, `|`, `grep`
-
 4. Find that process pid and terminate it by running `kill <PID>`. Note the command in your notes(1 pt)
-
-## Extra Credit: Good listening (2 pts)
-
-Echo a message over a port. When a connection is made on `localhost` or using the public IP, the message should print until the connection is terminated.
 
 ## Part 3: The Git Part (1 pt)
 
 1. Use `git` commands to `add`, `commit` and `push` the `Lab09` folder to GitHub.
+
+## Extra Credit: Good listening (2 pts)
+
+Echo a message over a port. When a connection is made on `localhost` or using the public IP, the message should print until the connection is terminated.
 
 ## Submission
 
