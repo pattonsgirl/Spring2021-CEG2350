@@ -43,7 +43,7 @@ Email: Your email
    - If you kill this process, what will happen?  
    - Kill the process and write the command you used.
 4. Run the script in the background using `bg`. (2 pts)
-   - Note the PID and the background ID. 
+   - Note the PID and the job ID. 
    - Kill the background process via the job ID and write the command you used.
 
 **Resources**
