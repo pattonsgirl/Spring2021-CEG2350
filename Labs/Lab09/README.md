@@ -52,6 +52,7 @@ The Jupyter Notebook is an open-source web application that allows you to create
 3. On your AWS system, start a `jupyter notebook` with the no browser option. Copy the output to your lab writeup. (1 pt)
    - Note: use `jupyter notebook --help`
 4. Can you run other commands right now?  Quit this process, and run `jupyter notebook` in the background.  Write the command you used. (1 pt)
+   - Note: if you can't figure this out, run the command normally and move on.  -1 pt will not kill you ;)
 5. Run `curl localhost:8888`.  Write what you see.
 6. Open a second terminal on your local system (do not `ssh` into the AWS system). 
 7. Forward the port running `jupyter notebook` to your local system and open the notebook in your browser by following the steps below:
@@ -86,7 +87,7 @@ A common issue is that a port you want to listen on (run a service on) is alread
    - Useful commands: `lsof`, `|`, `grep`
 4. Find that process pid and terminate it by running `kill <PID>`. Write the command you used (1 pt)
 
-## Part 3: The Git Part (1 pt)
+## Part 4: The Git Part (1 pt)
 
 1. Use `git` commands to `add`, `commit` and `push` the `Lab09` folder to GitHub.
 
