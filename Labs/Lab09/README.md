@@ -48,20 +48,17 @@ On your AWS system, use `ifconfig` and `curl ipinfo.io` and read `/etc/hostname`
 The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.  The programming language you would like to use in the notebook must be installed on the machine.  python and python3 are pre-installed on your AWS machines.  Jupyter, when run, will start up an HTTP connection that you can access via the web browser on the default port for jupyter, 8888.
 
 1. Install the `jupyter` package. Write the command(s) you used. (1 pt)
-2. Before we play with jupyter notebook, let's look at the local port.  Run `curl localhost:8888`.  Write what you see.
-3. On your AWS system, start a `jupyter notebook` with the no browser option. Copy the output to your lab writeup. (1 pt)
+2. Before we play with jupyter notebook, let's look at the local port.  Run `curl localhost:8888`.  Write what you see. (1 pt)
+3. On your AWS system, start a `jupyter notebook` with the "no browser" option. Copy the output to your lab writeup. (1 pt)
    - Note: use `jupyter notebook --help`
-4. Can you run other commands right now?  Quit this process, and run `jupyter notebook` in the background.  Write the command you used. (1 pt)
-   - Note: if you can't figure this out, run the command normally and move on.  -1 pt will not kill you ;)
-5. Run `curl localhost:8888`.  Write what you see.
-6. Open a second terminal on your local system (do not `ssh` into the AWS system). 
-7. Forward the port running `jupyter notebook` to your local system and open the notebook in your browser by following the steps below:
+4. Open a second terminal on your local system (do not `ssh` into the AWS system). 
+5. Forward the port running `jupyter notebook` to your local system and open the notebook in your browser by following the steps below:
    - Use `ssh` to forward the port as follows, but replace `your_elastic_ip` with your AWS system's IP:
    - `ssh -N -f -i your_private_key -L localhost:8888:localhost:8888 ubuntu@your_elastic_ip`
    - In your browser, type the following URL: `localhost:8888`
    - Paste the token (see your output from step 2) to get in.
-   - Write the token in your lab notes (1 pt)
-8. Answer the following: (2 pts)
+   - Write the token in your lab (1 pt)
+6. Answer the following: (2 pts)
    - What flags are in the `ssh` command in Step 3, and what do they do?
       - Note: full list of flags is `-N`, `-f`, `-i`, and `-L`
    - What files are displayed in the browser (what system are they from)?
