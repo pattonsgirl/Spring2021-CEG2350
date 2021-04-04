@@ -43,6 +43,8 @@ Note: Yes, this may already be installed. Don't worry about it.
 
 ## Part 2: SSH (4 pts)
 
+TODO: make new user, add key for that user
+
 In a previous lab, you made a key pair on your AWS system and used it to create a passwordless authentication with GitHub. You have also created an ssh alias so that you can use a shortcut command instead of typing out your ssh connection everytime. Now you are going to create an ssh key on your local system, and use this new key to get into your AWS system.
 
 1. On your local machine, identify what method you have been using to ssh in to your AWS system. This is your client. Consistentcy will be important here, especially for Windows users. Are you using Moba + Cygutils? WSL2? For Mac / Linux users, have you been using a local terminal?
@@ -62,14 +64,14 @@ In a previous lab, you made a key pair on your AWS system and used it to create 
 8. Do `git` commands still work in the folder you extracted? Write down your findings.
    - Hint: think back to ssh keys
 
+## Part 3: The Git Part (1 pt)
+
+1. Use `git` commands to `add`, `commit` and `push` the `Lab10` folder to GitHub.
+
 ## Extra Credit: G@M3R (4 pts)
 
 Install ninvader from the package above. For credit, you need to list how you installed ninvaders succesfully. Since it is a text based C language game, you will need an additional library in C, called `ncurses`.  
 Note: You may use the package manager (`apt`) to install the ncurses library, but you may **not** use the package manager (`apt`) to install ninvaders.
-
-## Part 3: The Git Part (1 pt)
-
-1. Use `git` commands to `add`, `commit` and `push` the `Lab10` folder to GitHub.
 
 ## Submission
 
