@@ -88,13 +88,13 @@ A common issue is that a port you want to listen on (run a service on) is alread
 
 1. Use `git` commands to `add`, `commit` and `push` the `Lab09` folder to GitHub.
 
-## Extra Credit: Exploring Jupyter (2 pts)
+## Extra Credit: Exploring Jupyter (2.5 pts)
 
 - Create a jupyter notebook.  Have the notebook print "Hello World" when the notebook is run.  You will need to select python as the programming language.
    - [Hint](https://www.dataquest.io/blog/jupyter-notebook-tutorial/)
 - Use `git` commands to `add`, `commit` and `push` your notebook to your `Lab09` folder to GitHub.
 
-## Extra Credit: Good listening (2 pts)
+## Extra Credit: Good listening (2.5 pts)
 
 - Echo a message over a port. When a connection is made on `localhost` or using the public IP, the message should print until the connection is terminated.
 - Document your steps in your `README.md` file, along with any resources you used.
