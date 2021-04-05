@@ -64,6 +64,8 @@ In a previous lab, you made a key pair on your AWS system and used it to create 
 8. Do `git` commands still work in the folder you extracted? Write down your findings.
    - Hint: think back to ssh keys
 
+## Install conda
+
 ## Part 3: The Git Part (1 pt)
 
 1. Use `git` commands to `add`, `commit` and `push` the `Lab10` folder to GitHub.
