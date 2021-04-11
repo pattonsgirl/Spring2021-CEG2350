@@ -22,6 +22,8 @@ Email: Your email
 
 ## Part 1: Makey Makey (8 pts)
 
+Install docker?
+
 Needing to install a package from source is not an uncommon request. You will be installing `curl` manually from source on your AWS Educate Instance.  
 Note: You may **not** use the package manager (`apt`).  
 Note: Yes, this may already be installed. Don't worry about it.
@@ -41,16 +43,22 @@ Note: Yes, this may already be installed. Don't worry about it.
 7. Now run `make install`
 8. `curl` should now be installed. Check the version number to verify the version you installed matches the version number you downloaded.
 
-## Part 2: SSH (4 pts)
+## Part 2: SSH
 
-TODO: make new user, add key for that user
-
-In a previous lab, you made a key pair on your AWS system and used it to create a passwordless authentication with GitHub. You have also created an ssh alias so that you can use a shortcut command instead of typing out your ssh connection everytime. Now you are going to create an ssh key on your local system, and use this new key to get into your AWS system.
+In a previous labs, you downloaded a _private_ key from AWS and used it to sign in. You made a key pair on your AWS system and used it to create a passwordless authentication with GitHub. You have also created an ssh alias so that you can use a shortcut command instead of typing out your ssh connection everytime. Now you are going to create an ssh key on your local system, and use this new key to get into your AWS system.
 
 1. On your local machine, identify what method you have been using to ssh in to your AWS system. This is your client. Consistentcy will be important here, especially for Windows users. Are you using Moba + Cygutils? WSL2? For Mac / Linux users, have you been using a local terminal?
 2. Create a new ssh key on the client. Use the default directory / names. Do not enter a passphrase when prompted (just hit `Enter` to skip it). Write the command you used.
-3. Copy the contents of the public key file to `/home/ubuntu/.ssh/authorized_keys` on your AWS Educate instance. Write your process.
-4. Log out, and `ssh` to your AWS educate system with your private key (not the private key you got from AWS). Write the command you used.
+   - **Useful commands**: `ssh-keygen`
+3. On your client, what directory your key was created in?
+4. On your client, which is the private and which is the public key?  How can you tell?
+5. In another terminal, connect to your AWS system as you usually have.  Write the full command you have been using to connect (you may need to view your `.bashrc` file)  
+6. View the current contents of `/home/ubuntu/.ssh/authorized_keys` and read through the following notes.
+   - On a given system, usually for a given user account (in this case, `ubuntu`), the `authorized_keys` file contains all public keys that are allowed to authenticate as that user.  If more users were created, and were going to use `ssh` keys for authentication, they would have their own `.ssh` folder with its own `authorized_keys` file with, again, a list of public keys that are allowed to authenticate as the user.  
+   - On the AWS system, there is an entry in the `ubuntu` user's `authorized_keys` that correlates back to the beginning of the course, when you created a key pair on AWS.  AWS had you download the _private_ key.  When you clicked through to create your environment, AWS put the _public_ key in the `ubuntu` user's `authorized_keys` file so that you could `ssh` from your system. 
+7. On your client, copy the newly created public key and _append_ it to `/home/ubuntu/.ssh/authorized_keys` on your AWS system.  Write the process you used.
+8. On your client, `ssh` in to the AWS system, but this time modify the old command to use your new private key instead of the one AWS had your download.  Write your modified `ssh` command.  There are at least two valid methods - you can use the hint to see if you can figure out the cleanest one.
+   - Hint: previously, we had to use the `-i` flag with our `ssh` command because we were using a key with a non-default name (`aws-2350key.pem`) stored in a non-default location (your home directory) and therefore needed to use `-i` to specify where the _private_ key was for `ssh` to use it.  If you did things correctly, you now have a key in a default location that `ssh` (the program) knows about, with a default name `ssh` (the program) can use.  So I pose to you, do you need the `-i` flag or parameter?
 
 ## Part 3: Getting Zippy (8 pts)
 
@@ -66,11 +74,11 @@ In a previous lab, you made a key pair on your AWS system and used it to create 
 
 ## Install conda
 
-## Part 3: The Git Part (1 pt)
+## Part 4: The Git Part (1 pt)
 
 1. Use `git` commands to `add`, `commit` and `push` the `Lab10` folder to GitHub.
 
-## Extra Credit: G@M3R (4 pts)
+## Extra Credit: G@M3R
 
 Install ninvader from the package above. For credit, you need to list how you installed ninvaders succesfully. Since it is a text based C language game, you will need an additional library in C, called `ncurses`.  
 Note: You may use the package manager (`apt`) to install the ncurses library, but you may **not** use the package manager (`apt`) to install ninvaders.
