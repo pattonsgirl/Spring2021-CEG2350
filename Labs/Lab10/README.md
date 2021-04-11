@@ -1,4 +1,4 @@
-# Lab 10 - NOT FINALIZED
+# Lab 10
 
 ## Lab Procedure
 
