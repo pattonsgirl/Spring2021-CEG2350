@@ -22,26 +22,29 @@ Email: Your email
 
 ## Part 1: Can do `conda`
 
-Install conda
+Needing to install a package is not an uncommon request. To practice this skill, you will be installing `conda` (short for Anaconda Python).
+   - [Installation guide in full](https://docs.anaconda.com/anaconda/install/linux/)
 
-Needing to install a package from source is not an uncommon request. You will be installing `curl` manually from source on your AWS Educate Instance.  
-Note: You may **not** use the package manager (`apt`).  
-Note: Yes, this may already be installed. Don't worry about it.
-
-1. Download the `curl` [source package](https://curl.haxx.se/download.html)
-   - Useful commands: `wget`
-2. Download the GPG key that corresponds with your file.
-3. Use `gpg` to verify your downloaded file. Write the command you used.
-   - [Useful resource](https://gnupg.org/download/integrity_check.html)
-   - Note: The results may be ... inconsistent. In this instance, don't worry about it, but do try to understand what is happening.
-4. Unpack the installation files
-   - Useful commands: `xz`, `tar`
-   - Note: you will need flags for the above commands
-5. Look in the unpacked directory. One of the files is named `configure`. Run it.
-6. Look in the directory again. What file appeared? Run it.
-   - Hint: Pairs with `make`
-7. Now run `make install`
-8. `curl` should now be installed. Check the version number to verify the version you installed matches the version number you downloaded.
+1. Check the current version of `python` when run with `python --version`.  Write the output.
+1. Download the installer for Linux Python 3.8 64-bit to your AWS system.  Write the command you used.
+   - **Useful commands**: `wget`, `curl`, `sftp`
+   - Link to [all installers](https://www.anaconda.com/products/individual)
+   - Link to [download the correct installer](https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh)
+2. Verify the integrity of your download by comparing the SHA-256 hash of the downloaded file to the hash listed on the site.  Write the command you used to compute the hash and write the SHA-256 sum that was output.
+   - Link to [hashes of installer](https://docs.anaconda.com/anaconda/install/hashes/Anaconda3-2020.11-Linux-x86_64.sh-hash/)
+3. Looking at what your downloaded installer is quite interesting.  Go ahead, `cat` it or, better, pipe it to `more`.  
+   - What you will see is a full installation script, from variables to licensing to checks it is running on your system for compatibility.  - The coolest part, however, happens around line 377.  The comment refers to a **tarball**. The line after computes the MD5 sum of the last 589 lines of the file to check its integrity. 
+   - Modify this command (on line 378): `tail -n +589 "$THIS_PATH" | md5sum -` and replace `"$THIS_PATH"` with your installer's file name.  **Write the modified command**.
+   - Does your result match the result on line 379?
+   - _Here's why this is cool_: if you download the installation file, it includes all needed base libraries to install Anaconda.  There are a chunk of base libraries (as you'll see during the install).  These libraries have been tarred and gnu-zipped, the result of which (think `cat` of which) has been put at the bottom of the install script.  This script includes (all in one file) a **tarball payload** so that it doesn't need to contact anything else on the network to finish the install, it just un-zips and un-tars the libraries.  This is an example of tarball payload being used for good.  This is a good moment to reflect of how tarball payloads could be snuck into an installer for less good.
+4. You have downloaded a script that installs Anaconda python when the script is run (executed).  Run the script using your choice of method, but write how you installed it.
+5. What directory did you install Anaconda to?  Write the full path.
+6. Allow the installer to initialize Anaconda.  What file was modified?
+7. Take a look at that file (towards the bottom, changes were appended), and describe what changes were made.  Think back to Lab04 when you played with a certain environment variable...
+8. Why does it recommend we restart the shell / logout and back in?  Think back to Lab03 when you messed with your system `.bachrc`...
+9. Updated the shell as you see fit, write what you did.
+10. Check the current version of `python` when run with `python --version`.  You can also run `python` on its own which should verify again whcih version of `python` you are now running.  Write the output.
+   - Note: this should be changed from before.  If not, circle back to questions 6 & 7 and rethink your answers.
 
 ## Part 2: Getting Zippy (8 pts)
 
