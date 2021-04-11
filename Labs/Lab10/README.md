@@ -80,8 +80,13 @@ In a previous labs, you downloaded a _private_ key from AWS and used it to sign 
 
 ## Extra Credit: G@M3R
 
-Install ninvader from the package above. For credit, you need to list how you installed ninvaders succesfully. Since it is a text based C language game, you will need an additional library in C, called `ncurses`.  
-Note: You may use the package manager (`apt`) to install the ncurses library, but you may **not** use the package manager (`apt`) to install ninvaders.
+Install ninvader from the package included in this folder, [ninvaders-0.1.1.tar.gz](ninvaders-0.1.1.tar.gz). For credit, you need to detail how you installed ninvaders succesfully. Since it is a text based C language game, you will need an additional library in C, called `ncurses`.
+
+- Note: You may use the package manager (`apt`) to install the ncurses library, but you may **not** use the package manager (`apt`) to install ninvaders.
+- **Useful commands**: `wget`, `tar`
+- [Hint](https://www.cyberciti.biz/faq/how-to-create-tar-gz-file-in-linux-using-command-line/)
+- Use `git` commands to `add`, `commit` and `push` to your `Lab10` folder to GitHub.
+
 
 ## Submission
 
