@@ -20,9 +20,9 @@ Email: Your email
 
 ```
 
-## Part 1: Makey Makey (8 pts)
+## Part 1: Can do `conda`
 
-Install docker?
+Install conda
 
 Needing to install a package from source is not an uncommon request. You will be installing `curl` manually from source on your AWS Educate Instance.  
 Note: You may **not** use the package manager (`apt`).  
@@ -43,7 +43,21 @@ Note: Yes, this may already be installed. Don't worry about it.
 7. Now run `make install`
 8. `curl` should now be installed. Check the version number to verify the version you installed matches the version number you downloaded.
 
-## Part 2: SSH
+## Part 2: Getting Zippy (8 pts)
+
+1. Use `tar` to create a tar ball of your AWS home directory.
+2. How large is the tarred file?
+3. Use `gzip` (or a similar tool) to compress the file. How big is it now?
+4. What is the `md5sum` of this file?
+5. `exit` from your `ssh` connection with the AWS instance or open a new terminal. Use an `sftp` connection to your AWS educate instance to **download** the compressed home directory to your local system. Write the command(s) you used.
+6. What is the `md5sum` of the file you downloaded?
+7. Uncompress the file on your local system. Write the commands you used.
+8. Do `git` commands still work in the folder you extracted? Write down your findings.
+   - Hint: think back to ssh keys
+
+- Note: this will snapshot your directory, but there is more of the lab to go.  You'll need to go through this process again if you'd like to get everything after you've made updates.
+
+## Part 3: SSH
 
 In a previous labs, you downloaded a _private_ key from AWS and used it to sign in. You made a key pair on your AWS system and used it to create a passwordless authentication with GitHub. You have also created an ssh alias so that you can use a shortcut command instead of typing out your ssh connection everytime. Now you are going to create an ssh key on your local system, and use this new key to get into your AWS system.
 
@@ -59,20 +73,6 @@ In a previous labs, you downloaded a _private_ key from AWS and used it to sign 
 7. On your client, copy the newly created public key and _append_ it to `/home/ubuntu/.ssh/authorized_keys` on your AWS system.  Write the process you used.
 8. On your client, `ssh` in to the AWS system, but this time modify the old command to use your new private key instead of the one AWS had your download.  Write your modified `ssh` command.  There are at least two valid methods - you can use the hint to see if you can figure out the cleanest one.
    - Hint: previously, we had to use the `-i` flag with our `ssh` command because we were using a key with a non-default name (`aws-2350key.pem`) stored in a non-default location (your home directory) and therefore needed to use `-i` to specify where the _private_ key was for `ssh` to use it.  If you did things correctly, you now have a key in a default location that `ssh` (the program) knows about, with a default name `ssh` (the program) can use.  So I pose to you, do you need the `-i` flag or parameter?
-
-## Part 3: Getting Zippy (8 pts)
-
-1. Use `tar` to create a tar ball of your AWS home directory.
-2. How large is the tarred file?
-3. Use `gzip` (or a similar tool) to compress the file. How big is it now?
-4. What is the `md5sum` of this file?
-5. `exit` from your `ssh` connection with the AWS instance or open a new terminal. Use an `sftp` connection to your AWS educate instance to **download** the compressed home directory to your local system. Write the command(s) you used.
-6. What is the `md5sum` of the file you downloaded?
-7. Uncompress the file on your local system. Write the commands you used.
-8. Do `git` commands still work in the folder you extracted? Write down your findings.
-   - Hint: think back to ssh keys
-
-## Install conda
 
 ## Part 4: The Git Part (1 pt)
 
