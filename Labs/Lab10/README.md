@@ -33,6 +33,7 @@ Needing to install a package is not an uncommon request. To practice this skill,
 3. Verify the integrity of your download by comparing the SHA-256 hash of the downloaded file to the hash listed on the site.  Write the command you used to compute the hash and write the SHA-256 sum that was output. (1 pt)
    - Link to [hashes of installer](https://docs.anaconda.com/anaconda/install/hashes/Anaconda3-2020.11-Linux-x86_64.sh-hash/)
 4. Looking at what your downloaded installer is quite interesting.  Go ahead, `cat` it or, better, pipe it to `more`.  Note there are **two** questions in the bullets for this part
+   - **Ammendment 4/13** - you may need to also download the installer to your local system - not to install it, but just to view the file using Notepad / Notepad++ / VSCode.  Turns out this file is big enough that it makes our AWS instances sad.  Download the same installer, just to your local system instead.  Open it with a text editor.
    - What you will see is a full installation script, from variables to licensing to checks it is running on your system for compatibility.  - The coolest part, however, happens around line 377.  The comment refers to a **tarball**. The line after computes the MD5 sum of the last 589 lines of the file to check its integrity. 
    - Modify this command (on line 378): `tail -n +589 "$THIS_PATH" | md5sum -` and replace `"$THIS_PATH"` with your installer's file name.  **Write the modified command**. (1 pt)
    - **Write the result of your command.  Does your result match the result on line 379?**  (1 pt)
