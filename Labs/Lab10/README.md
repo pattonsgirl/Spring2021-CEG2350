@@ -24,6 +24,7 @@ Email: Your email
 
 Needing to install a package is not an uncommon request. To practice this skill, you will be installing `conda` (short for Anaconda Python).
    - [Installation guide in full](https://docs.anaconda.com/anaconda/install/linux/)
+   - **Ammendment 4/15** Note on disk space: since the AWS systems are feeling a bit full, you may want to run the [commands listed here to free some space](https://github.com/pattonsgirl/Spring2021-CEG2350/blob/master/Labs/Lab10/clean-commands).  If you are still having trouble, you have permission to install this on any Linux based terminal (WSL2, Moba+cygutils, etc.)
 
 1. Check the current version of `python` when run with `python --version`.  Write the output. (1 pt)
 2. Download the installer for Linux Python 3.8 64-bit to your AWS system.  Write the command you used. (1 pt)
@@ -43,7 +44,7 @@ Needing to install a package is not an uncommon request. To practice this skill,
    - **Important**: use either the default of `/home/ubuntu/` OR `/opt/anaconda3/`  Trying to install to a folder linked to GitHub will lead to sadness and pain.
 7. Allow the installer to initialize Anaconda.  What file was modified? (1 pt)
 8. Take a look at that file (towards the bottom, changes were appended), and describe what changes were made.  Think back to Lab04 when you played with a certain environment variable... (1 pt)
-9. Why does it recommend we restart the shell / logout and back in?  Think back to Lab03 when you messed with your system `.bachrc`... (1 pt)
+9. Why does it recommend we restart the shell / logout and back in?  Think back to Lab03 when you messed with your system `.bashrc`... (1 pt)
 10. Updated the shell as you see fit, write what you did. (1 pt)
 11. Check the current version of `python` when run with `python --version`.  You can also run `python` on its own which should verify again whcih version of `python` you are now running.  Write the output. (1 pt)
    - Note: this should be changed from before.  If not, circle back to questions 6 & 7 and rethink your answers.
