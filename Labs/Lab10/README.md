@@ -49,6 +49,8 @@ Needing to install a package is not an uncommon request. To practice this skill,
 11. Check the current version of `python` when run with `python --version`.  You can also run `python` on its own which should verify again whcih version of `python` you are now running.  Write the output. (1 pt)
    - Note: this should be changed from before.  If not, circle back to questions 6 & 7 and rethink your answers.
 
+Note: after finishing this part, you can delete anaconda to make life easier down below.  No other parts will use anaconda.
+
 ## Part 2: Getting Zippy (13 pts)
 
 You will get the coolest effect from this portion if you successfully created the `space` "file" that we turned into a filesystem in Lab07.  If not, don't sweat it, but the change in size is most notable.
