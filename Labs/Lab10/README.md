@@ -100,6 +100,7 @@ In a previous labs, you downloaded a _private_ key from AWS and used it to sign 
 
 ## Part 4: The Git Part (1 pt)
 
+**Don't `git add` the `anaconda.sh` installer.  If you did, pop down to hints in the Submission section**
 1. Use `git` commands to `add`, `commit` and `push` the `Lab10` folder to GitHub.
 
 ## Extra Credit: G@M3R
@@ -117,4 +118,33 @@ Install ninvader from the package included in this folder, [ninvaders-0.1.1.tar.
 In your GitHub repository, select the green `Code` button then select `Download ZIP`. Upload this zip file to the Pilot Dropbox.
 
 In the `Comment` area in the Pilot Dropbox, copy URL / link to the repository corresponding to the project your are submitting.
+
+Don't `git add` the `anaconda.sh`.  But if you did, this is for you:
+
+- Easy way: 
+   - copy / sftp your Lab10 README.md file to your computer.  Make sure you can read it on your computer.
+   - remove (`rm -rf`) your repo folder.
+   - on your GitHub page, click the Code button, then click Clone, then make sure SSH is selected.  Copy that.
+   - Back in your terminal, `git clone paste_what_you_copied`
+
+- Hard way:
+   - Set an amount of time you want to spend on this, debate going the easy way.
+   - Resource to follow: https://docs.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository
+      - Go with `bfg` at your own risk.  I hear it's easier.  Follow those instructions if you go with `bfg`.  Brag.  Profit.
+   - Be in the main folder of your repo.  `spring2021-blah`
+   - Run this, replace `Lab10/anaconda.sh` with anything specific to your situation (different caps, etc.)
+   - Run this doozy, copy it all at once, paste it all at once, hit enter:
+```
+git filter-branch --force --index-filter \
+"git rm --cached --ignore-unmatch Lab10/anaconda.sh" \
+--prune-empty --tag-name-filter cat -- --all
+```
+   - You _should_ see something similar to this:
+```
+> Rewrite 48dc599c80e20527ed902928085e7861e6b3cbe6 (266/266)
+> Ref 'refs/heads/main' was rewritten
+```
+   - If you don't, re-think going with the easy way.  But also check your names versus what is in the command I pre-wrote for you and modify appropriately.
+   - Once the above seems happy, run: `git push origin --force --all`
+   - Check that `Lab10/README.md` made it to GitHub.  
 
