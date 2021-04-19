@@ -31,7 +31,7 @@
    - Boot loaders: NTLDR, GRUB
 3. Fragmentation
 4. Sequential and random access
-5. ~~Compression (gzip, tar)~~
+5. Compression (gzip, tar)
 6. File systems: vfat, ntfs, ext
    - ~~implementations / fragmentation / performance~~
 7. ~~Network file share: SFTP, NFS, Samba~~
@@ -52,7 +52,7 @@
 6. CPU & kernel memory management
 7. Thread vs Fork
 8. Single CPU multi-tasking
-9. Multiple CPUs ~~and SMP (Symmetric multiprocessing)~~
+9. Multiple CPUs and SMP (Symmetric multiprocessing)
 
 ## Git (version control)
 
