@@ -1,18 +1,9 @@
 ## Command line programming
 
-1. Assembly/machine language programming
-   - Bits (1), bytes (8 bits), word (16, 32, or 64 bits)
-2. Interpreters
-3. Libraries & dynamic linking (loads and links the shared libraries needed by an executable when it is executed)
-4. Memory handling in programming (static vs. stack vs. heap)
-5. Makefiles
-6. Compiling programs (Linux is not Windows)
+1. Compiling programs (Linux is not Windows)
    - Linux ELF (Executable & Linkable Format)
    - Windows EXE
-7. Overview of command line debugging
-8. Commands: ldd, make
-9. ~~Alternate data streams (od, /dev/null)~~
-10. ~~Requiring root to run~~
+2. Overview of command line debugging
 
 ## Data storage and access:
 
@@ -38,6 +29,7 @@
 8. Commands: df, du, mount, umount, etc/fstab
 9. Devices and drivers
 10. File locks
+11. Alternate data streams (od, /dev/null)
 
 ## Processes
 
