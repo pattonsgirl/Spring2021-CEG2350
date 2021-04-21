@@ -79,37 +79,37 @@ Final: Monday, 4/26
 
 ## Networking
 
-8 bit binary translation to base (decimal) 00000001 1
-Packets - source & destination, checksums verify if data transmitted
-1. IP v4 addresses & CIDR notation, subnet /24 = 255.255.255.0 /16 /8 /0 = any IP is a match
-2. Host names, DNS
-4. TCP and UDP
-3. Ports:
+1. 8 bit binary translation to base (decimal) 00000001 1
+2. Packets - source & destination, checksums verify if data transmitted
+3. IP v4 addresses & CIDR notation, subnet /24 = 255.255.255.0 /16 /8 /0 = any IP is a match
+4. Host names, DNS
+5. TCP and UDP
+6. Ports:
    - Services run on ports
       - 80 HTTP
       - 443 HTTPS
       - 22 SSH
-3. Web protocols: 
+7. Web protocols: 
    - HTTP (80) vs HTTPS (443)
-5. Ports vs sockets, clients and servers
+8. Ports vs sockets, clients and servers
    - Application opens a socket which is connected to a port
-6. secure shell (22)
+9. secure shell (22)
    - private and public id and create
    - sftp - get put help lls vs ls
-6. X11 in terms of graphical “forwarding” and role of a GUI
-7. Web browsers (URLs, SSL certs) and clients (ping, wget, ~~traceroute~~)
+10. X11 in terms of graphical “forwarding” and role of a GUI
+11. Web browsers (URLs, SSL certs) and clients (ping, wget, ~~traceroute~~)
    - cookies
-8. Physical pieces of a network
+12. Physical pieces of a network
    - hosts, routers, switches, ISPs, wireless, LAN
-9. Proxies & VPNs
+13. Proxies & VPNs
    - VPNs provided encypted communication
    - vs not (proxies)
-10. ~~Caches - locally & via servers that cache info.~~
-11. Firewalls - chains that restrict traffic
-12. OSI layers (encapsulation / packets, application, transport, network, datalink, physical)
-13. Virus scanning & types of computer diseases
-14. Downloading installer (wget, curl)
-15. Torrents - download over network of resources that have info
+14. ~~Caches - locally & via servers that cache info.~~
+15. Firewalls - chains that restrict traffic
+16. OSI layers (encapsulation / packets, application, transport, network, datalink, physical)
+17. Virus scanning & types of computer diseases
+18. Downloading installer (wget, curl)
+19. Torrents - download over network of resources that have info
 
 ## Computer-ception
 
