@@ -3,7 +3,7 @@
 
 ## Da Rules
 
-Midterm: Monday, 4/26
+Final: Monday, 4/26
 
 - Available 8:00 AM to 11:59 PM
 - 1 attempt, 2 hours once started
@@ -29,25 +29,25 @@ Midterm: Monday, 4/26
    - Motherboard
    - HDD vs SSD
    - GPU (in terms of integrated vs dedicated)
-   - Virtual memory: swap tables / paging
 2. Booting of OS
    - Power on self-test (POST)
    - BIOS vs UEFI
    - Partition Tables: GPT vs MBR
-   - Boot loaders: NTLDR, GRUB
-3. Fragmentation
-4. Sequential and random access
-5. Compression & creating archives (gzip, tar)
-6. File systems: vfat, ntfs, ext
+   - Boot loaders: NTLDR, BootManager, GRUB
+3. Fragmentation - slow down HDDs
+4. Virtual memory: swap tables / paging
+5. Sequential and random access
+6. File systems: vfat, ntfs, ext4
+   - journaling
    - ~~implementations / fragmentation / performance~~
 7. ~~Network file share: SFTP, NFS, Samba~~
 8. Commands: df, du, mount, umount, etc/fstab
-9. Devices and drivers
-10. File locks
-11. Alternate data streams (od, /dev/null)
+9. File locks
+10. Alternate data streams (od, /dev/null)
+11. Compression & creating archives (gzip, tar)
 12. Verifying files with checksums ~~& keys~~
 
-## Processes
+## Kernels & Processes
 
 1. Task Manager (Linux [top] vs. Windows)
 2. init process / kernel level vs user level processes
@@ -55,12 +55,13 @@ Midterm: Monday, 4/26
 3. System calls (way for programs / APIs to interact with the operating system)
    - systemd - systemctl & journalctl
    - Fork & exec
-4. Commands: kill, ps, top, nice, bg, fg, jobs, nohup, ~~killall~~, screen
-5. Preemptive (interruptible) and non-preemptive scheduling, priorities, signals
+4. Commands: kill, ps, top, htop, nice, bg, fg, jobs, ~~nohup~~, ~~killall~~, screen
+5. ~~Preemptive (interruptible) and non-preemptive scheduling, priorities, signals~~
 6. CPU & kernel memory management
 7. Thread vs Fork
 8. Single CPU multi-tasking
 9. Multiple CPUs and SMP (Symmetric multiprocessing)
+10. Devices and drivers
 
 ## Git (version control)
 
@@ -78,21 +79,32 @@ Midterm: Monday, 4/26
 
 ## Networking
 
-1. IP v4 addresses & CIDR notation
-2. Host names, DNS, URLs
-3. Protocols: HTTP (80) vs HTTPS (443)
+8 bit binary translation to base (decimal) 00000001 1
+Packets - source & destination, checksums verify if data transmitted
+1. IP v4 addresses & CIDR notation, subnet /24 = 255.255.255.0 /16 /8 /0 = any IP is a match
+2. Host names, DNS
 4. TCP and UDP
-5. Ports vs sockets, clients and servers, secure shell (22), sftp
+3. Ports:
+   - Services run on ports
+      - 80 HTTP
+      - 443 HTTPS
+      - 22 SSH
+3. Web protocols: 
+   - HTTP (80) vs HTTPS (443)
+5. Ports vs sockets, clients and servers
    - Application opens a socket which is connected to a port
+6. secure shell (22)
+   - private and public id and create
+   - sftp - get put help lls vs ls
 6. X11 in terms of graphical “forwarding” and role of a GUI
-7. Web browsers (URLs, SSL certs) and clients (ping, wget, traceroute)
+7. Web browsers (URLs, SSL certs) and clients (ping, wget, ~~traceroute~~)
    - cookies
 8. Physical pieces of a network
    - hosts, routers, switches, ISPs, wireless, LAN
 9. Proxies & VPNs
    - VPNs provided encypted communication
    - vs not (proxies)
-10. Caches - locally & via servers that cache info.
+10. ~~Caches - locally & via servers that cache info.~~
 11. Firewalls - chains that restrict traffic
 12. OSI layers (encapsulation / packets, application, transport, network, datalink, physical)
 13. Virus scanning & types of computer diseases
@@ -105,13 +117,13 @@ Midterm: Monday, 4/26
    - set up with an amount of RAM it can take up
    - full installation, including kernel - runs within hypervisor
    - hypervisor manages resources to share with host system
-   - needs physical machine to have resources to run host & additional hardware that cna be reserved for VM
+   - needs physical machine to have resources to run host & additional hardware that can be reserved for VM
 2. Containers (Needs kernel)
    - runs in combination with normal system
    - relies on host kernel
    - environment in which you can install tools / packages / etc without changing host configuration
 
-## System Management / Additional Topics
+## System Management / Additional Topics - Not examable
 
 1. Updates (Linux vs. Windows)
 2. Installing packages with make
