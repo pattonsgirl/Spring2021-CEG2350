@@ -1,3 +1,16 @@
+# Final Review for CEG 2350
+## Spring 2021
+
+## Da Rules
+
+Midterm: Monday, 4/26
+
+- Available 8:00 AM to 11:59 PM
+- 1 attempt, 2 hours once started
+- Open note, open terminal
+
+# Topic List
+
 ## Command line programming
 
 1. Compiling programs (Linux is not Windows)
