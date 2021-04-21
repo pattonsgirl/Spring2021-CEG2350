@@ -3,7 +3,9 @@
 1. Compiling programs (Linux is not Windows)
    - Linux ELF (Executable & Linkable Format)
    - Windows EXE
-2. Overview of command line debugging
+2. Installing compilers & adding compilers to PATH
+3. Overview of command line debugging
+4. Overview of "space" of a program
 
 ## Data storage and access:
 
