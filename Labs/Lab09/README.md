@@ -59,7 +59,7 @@ The Jupyter Notebook is an open-source web application that allows you to create
    - Paste the token (see your output from step 2) to get in.
    - Write the token in your lab (1 pt)
 6. Answer the following: (2 pts)
-   - What flags are in the `ssh` command in Step 3, and what do they do?
+   - What flags are in the `ssh` command in Step 5, and what do they do?
       - Note: full list of flags is `-N`, `-f`, `-i`, and `-L`
    - What files are displayed in the browser (what system are they from)?
 
